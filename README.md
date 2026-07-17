@@ -10,7 +10,7 @@ An AI-powered web application that helps students and job seekers make informed 
 - 👤 User Profile Management
 - 📄 ATS-Based Resume Analysis
 - 🤖 AI Career Chatbot (OpenRouter API)
-- 📝 Dynamic Skill Assessment Quiz
+- 📝 Skill Assessment Quiz
 - 🧠 Machine Learning Career Prediction (Random Forest)
 - 💼 Job Recommendations
 - 📊 Quiz History & Chat History
@@ -80,32 +80,36 @@ virtual-career-mentor/
 git clone https://github.com/Bhagya-419/Virtual_Career_Mentor.git
 ```
 
-### Backend Setup
+## 🚀 Backend Setup
+
+### 1. Navigate to the backend folder
 
 ```bash
 cd backend
+```
+
+### 2. Install the required dependencies
+
+```bash
 npm install
 ```
 
-Create a `.env` file inside the backend folder.
+### 3. Create a `.env` file
 
-Example:
+Create a `.env` file inside the **backend** folder and add the following environment variables:
 
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-OPENROUTER_API_KEY=your_api_key
+JWT_SECRET=your_jwt_secret
+OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
-Run backend:
+### 4. Start the backend server
 
 ```bash
-npm start
+node server.js
 ```
-
----
-
 ### Frontend Setup
 
 ```bash
