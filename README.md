@@ -146,7 +146,7 @@ npm start
 
 ## 👩‍💻 Developed By
 
-- Bhagya Lakshmi
+- Bhagya
 - Pavani
 - Pranathi
 - Pravalika
