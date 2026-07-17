@@ -8,7 +8,7 @@ An AI-powered web application that helps students and job seekers make informed 
 
 - 🔐 User Authentication (JWT)
 - 👤 User Profile Management
-- 📄 ATS-Based Resume Analysis
+- 📄 Rule Based Resume Analysis
 - 🤖 AI Career Chatbot (OpenRouter API)
 - 📝 Skill Assessment Quiz
 - 🧠 Machine Learning Career Prediction (Random Forest)
@@ -124,7 +124,7 @@ npm start
 
 1. User Registration/Login
 2. Upload Resume
-3. ATS Resume Analysis
+3. Resume Analysis
 4. Take Skill Assessment Quiz
 5. Predict Career using ML Model
 6. AI Career Guidance
