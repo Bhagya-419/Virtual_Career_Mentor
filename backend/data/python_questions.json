@@ -1,0 +1,122 @@
+[
+{
+"subject": "Python",
+"question": "What is Python?",
+"options": ["Database", "Programming Language", "Browser", "OS"],
+"correctAnswer": "Programming Language"
+},
+{
+"subject": "Python",
+"question": "Which keyword is used to define a function?",
+"options": ["function", "define", "def", "fun"],
+"correctAnswer": "def"
+},
+{
+"subject": "Python",
+"question": "Which data type stores True or False?",
+"options": ["int", "str", "bool", "float"],
+"correctAnswer": "bool"
+},
+{
+"subject": "Python",
+"question": "Which symbol is used for comments?",
+"options": ["//", "#", "/*", "--"],
+"correctAnswer": "#"
+},
+{
+"subject": "Python",
+"question": "Which function displays output?",
+"options": ["display()", "echo()", "print()", "show()"],
+"correctAnswer": "print()"
+},
+{
+"subject": "Python",
+"question": "Which collection is ordered and mutable?",
+"options": ["Set", "Tuple", "List", "Dictionary"],
+"correctAnswer": "List"
+},
+{
+"subject": "Python",
+"question": "Which loop repeats while a condition is true?",
+"options": ["for", "repeat", "while", "loop"],
+"correctAnswer": "while"
+},
+{
+"subject": "Python",
+"question": "What is the file extension of Python files?",
+"options": [".java", ".py", ".cpp", ".js"],
+"correctAnswer": ".py"
+},
+{
+"subject": "Python",
+"question": "Which keyword is used for conditional branching?",
+"options": ["if", "switch", "case", "branch"],
+"correctAnswer": "if"
+},
+{
+"subject": "Python",
+"question": "Which operator is used for exponentiation?",
+"options": ["^", "**", "//", "%"],
+"correctAnswer": "**"
+},
+  {
+    "subject": "Python",
+    "question": "Which data type is immutable in Python?",
+    "options": ["List", "Dictionary", "Set", "Tuple"],
+    "correctAnswer": "Tuple"
+  },
+  {
+    "subject": "Python",
+    "question": "What is the output of len('Python')?",
+    "options": ["5", "6", "7", "Error"],
+    "correctAnswer": "6"
+  },
+  {
+    "subject": "Python",
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["catch", "try", "handle", "except"],
+    "correctAnswer": "try"
+  },
+  {
+    "subject": "Python",
+    "question": "Which function is used to get user input?",
+    "options": ["scan()", "input()", "get()", "read()"],
+    "correctAnswer": "input()"
+  },
+  {
+    "subject": "Python",
+    "question": "What is the output of type([])?",
+    "options": ["tuple", "dict", "list", "set"],
+    "correctAnswer": "list"
+  },
+  {
+    "subject": "Python",
+    "question": "Which operator is used for floor division?",
+    "options": ["/", "%", "//", "**"],
+    "correctAnswer": "//"
+  },
+  {
+    "subject": "Python",
+    "question": "Which method adds an element to the end of a list?",
+    "options": ["insert()", "append()", "extend()", "add()"],
+    "correctAnswer": "append()"
+  },
+  {
+    "subject": "Python",
+    "question": "Which keyword is used to define a class in Python?",
+    "options": ["object", "struct", "class", "define"],
+    "correctAnswer": "class"
+  },
+  {
+    "subject": "Python",
+    "question": "What is the output of bool(0)?",
+    "options": ["True", "False", "0", "Error"],
+    "correctAnswer": "False"
+  },
+  {
+    "subject": "Python",
+    "question": "Which module is commonly used for mathematical functions like sqrt()?",
+    "options": ["random", "math", "numpy", "os"],
+    "correctAnswer": "math"
+  }
+]

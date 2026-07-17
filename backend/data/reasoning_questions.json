@@ -1,0 +1,122 @@
+[
+  {
+    "subject": "Reasoning",
+    "question": "Find the next number: 2, 4, 8, 16, ?",
+    "options": ["20", "24", "30", "32"],
+    "correctAnswer": "32"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "If CAT = DBU, then DOG = ?",
+    "options": ["EPH", "EOG", "FPH", "DOH"],
+    "correctAnswer": "EPH"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Which is the odd one out?",
+    "options": ["Apple", "Banana", "Mango", "Car"],
+    "correctAnswer": "Car"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "If all roses are flowers and all flowers are plants, then roses are?",
+    "options": ["Trees", "Plants", "Fruits", "Leaves"],
+    "correctAnswer": "Plants"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Find the missing number: 3, 6, 12, 24, ?",
+    "options": ["36", "42", "48", "50"],
+    "correctAnswer": "48"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Which word does not belong?",
+    "options": ["Circle", "Square", "Triangle", "Table"],
+    "correctAnswer": "Table"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "A is taller than B. B is taller than C. Who is shortest?",
+    "options": ["A", "B", "C", "Cannot say"],
+    "correctAnswer": "C"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "What comes next: A, C, E, G, ?",
+    "options": ["H", "I", "J", "K"],
+    "correctAnswer": "I"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "If today is Monday, what day will it be after 10 days?",
+    "options": ["Wednesday", "Thursday", "Friday", "Saturday"],
+    "correctAnswer": "Thursday"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Find the next number: 1, 1, 2, 3, 5, ?",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": "8"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Find the next number: 4, 9, 16, 25, ?",
+    "options": ["30", "35", "36", "49"],
+    "correctAnswer": "36"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "If PEN is coded as QFO, then BOOK is coded as?",
+    "options": ["CPPL", "CPPK", "CQQM", "CPQM"],
+    "correctAnswer": "CPPL"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Which number is missing? 2, 6, 12, 20, ?, 42",
+    "options": ["28", "30", "32", "34"],
+    "correctAnswer": "30"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "A is taller than B. B is taller than C. Who is the shortest?",
+    "options": ["A", "B", "C", "Cannot determine"],
+    "correctAnswer": "C"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Find the odd one out.",
+    "options": ["Triangle", "Square", "Circle", "Rectangle"],
+    "correctAnswer": "Circle"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "If today is Wednesday, what day will it be after 10 days?",
+    "options": ["Friday", "Saturday", "Sunday", "Monday"],
+    "correctAnswer": "Saturday"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Find the next letter: Z, X, V, T, ?",
+    "options": ["R", "Q", "S", "P"],
+    "correctAnswer": "R"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Which number does not belong? 3, 5, 7, 11, 14, 17",
+    "options": ["5", "7", "14", "17"],
+    "correctAnswer": "14"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "If 7 + 3 = 73 and 8 + 2 = 82, then 9 + 4 = ?",
+    "options": ["94", "49", "13", "96"],
+    "correctAnswer": "94"
+  },
+  {
+    "subject": "Reasoning",
+    "question": "Pointing to a man, a woman said, 'He is the son of my mother's only son.' Who is the man?",
+    "options": ["Brother", "Son", "Father", "Nephew"],
+    "correctAnswer": "Son"
+  }
+]

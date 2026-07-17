@@ -1,0 +1,127 @@
+[
+  {
+    "subject": "C++",
+    "question": "Which feature supports data hiding in C++?",
+    "options": ["Inheritance", "Encapsulation", "Polymorphism", "Templates"],
+    "correctAnswer": "Encapsulation"
+  },
+  {
+    "subject": "C++",
+    "question": "Which symbol is used to access members using an object?",
+    "options": ["->", "::", ".", "&"],
+    "correctAnswer": "."
+  },
+  {
+    "subject": "C++",
+    "question": "Which concept allows one function to have multiple forms?",
+    "options": ["Abstraction", "Inheritance", "Polymorphism", "Encapsulation"],
+    "correctAnswer": "Polymorphism"
+  },
+  {
+    "subject": "C++",
+    "question": "Which keyword is used to inherit a class?",
+    "options": ["extends", "inherits", ":", "implements"],
+    "correctAnswer": ":"
+  },
+  {
+    "subject": "C++",
+    "question": "Which function is automatically called when an object is created?",
+    "options": ["Destructor", "Constructor", "Main", "Friend Function"],
+    "correctAnswer": "Constructor"
+  },
+  {
+    "subject": "C++",
+    "question": "Which function is automatically called when an object is destroyed?",
+    "options": ["Constructor", "Delete", "Destructor", "Free"],
+    "correctAnswer": "Destructor"
+  },
+  {
+    "subject": "C++",
+    "question": "Which operator is used to allocate memory dynamically?",
+    "options": ["malloc", "alloc", "new", "create"],
+    "correctAnswer": "new"
+  },
+  {
+    "subject": "C++",
+    "question": "Which operator is used to deallocate memory allocated using new?",
+    "options": ["free", "delete", "remove", "destroy"],
+    "correctAnswer": "delete"
+  },
+  {
+    "subject": "C++",
+    "question": "Which of the following is not an OOP concept?",
+    "options": ["Inheritance", "Encapsulation", "Compilation", "Polymorphism"],
+    "correctAnswer": "Compilation"
+  },
+  {
+    "subject": "C++",
+    "question": "What is function overloading?",
+    "options": [
+      "Multiple functions with same name but different parameters",
+      "Calling functions recursively",
+      "Using pointers in functions",
+      "Overriding parent function"
+    ],
+    "correctAnswer": "Multiple functions with same name but different parameters"
+  },
+  {
+    "subject": "C++",
+    "question": "Which STL container follows LIFO?",
+    "options": ["Queue", "Stack", "Vector", "Map"],
+    "correctAnswer": "Stack"
+  },
+  {
+    "subject": "C++",
+    "question": "Which STL container stores key-value pairs?",
+    "options": ["Vector", "Stack", "Queue", "Map"],
+    "correctAnswer": "Map"
+  },
+  {
+    "subject": "C++",
+    "question": "What is the time complexity of searching in a balanced BST?",
+    "options": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+    "correctAnswer": "O(log n)"
+  },
+  {
+    "subject": "C++",
+    "question": "Which keyword prevents inheritance of a class member?",
+    "options": ["final", "private", "const", "static"],
+    "correctAnswer": "private"
+  },
+  {
+    "subject": "C++",
+    "question": "Which keyword refers to the current object?",
+    "options": ["self", "current", "this", "object"],
+    "correctAnswer": "this"
+  },
+  {
+    "subject": "C++",
+    "question": "Which feature allows code reuse?",
+    "options": ["Inheritance", "Destructor", "Friend Function", "Namespace"],
+    "correctAnswer": "Inheritance"
+  },
+  {
+    "subject": "C++",
+    "question": "Which access specifier makes members accessible only within the class?",
+    "options": ["public", "protected", "private", "internal"],
+    "correctAnswer": "private"
+  },
+  {
+    "subject": "C++",
+    "question": "Which of the following supports runtime polymorphism?",
+    "options": ["Function Overloading", "Operator Overloading", "Virtual Functions", "Templates"],
+    "correctAnswer": "Virtual Functions"
+  },
+  {
+    "subject": "C++",
+    "question": "What is the default access specifier in a class?",
+    "options": ["public", "protected", "private", "friend"],
+    "correctAnswer": "private"
+  },
+  {
+    "subject": "C++",
+    "question": "Which data structure is commonly used for DFS?",
+    "options": ["Queue", "Stack", "Heap", "Hash Table"],
+    "correctAnswer": "Stack"
+  }
+]

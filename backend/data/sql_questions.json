@@ -1,0 +1,122 @@
+[
+{
+"subject": "SQL",
+"question": "SQL stands for?",
+"options": ["Structured Query Language", "Simple Query Language", "System Query Language", "Server Query Language"],
+"correctAnswer": "Structured Query Language"
+},
+{
+"subject": "SQL",
+"question": "Which command retrieves data?",
+"options": ["GET", "SELECT", "FETCH", "SHOW"],
+"correctAnswer": "SELECT"
+},
+{
+"subject": "SQL",
+"question": "Which command inserts data?",
+"options": ["INSERT", "ADD", "PUT", "CREATE"],
+"correctAnswer": "INSERT"
+},
+{
+"subject": "SQL",
+"question": "Which clause filters rows?",
+"options": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+"correctAnswer": "WHERE"
+},
+{
+"subject": "SQL",
+"question": "Which keyword removes a table?",
+"options": ["DELETE", "REMOVE", "DROP", "TRUNCATE"],
+"correctAnswer": "DROP"
+},
+{
+"subject": "SQL",
+"question": "Which function counts rows?",
+"options": ["SUM()", "COUNT()", "TOTAL()", "ROWS()"],
+"correctAnswer": "COUNT()"
+},
+{
+"subject": "SQL",
+"question": "Which command updates existing records?",
+"options": ["MODIFY", "UPDATE", "CHANGE", "ALTER"],
+"correctAnswer": "UPDATE"
+},
+{
+"subject": "SQL",
+"question": "Primary key must be?",
+"options": ["Duplicate", "Null", "Unique", "Optional"],
+"correctAnswer": "Unique"
+},
+{
+"subject": "SQL",
+"question": "Which join returns matching records from both tables?",
+"options": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL JOIN"],
+"correctAnswer": "INNER JOIN"
+},
+{
+"subject": "SQL",
+"question": "Which statement creates a table?",
+"options": ["MAKE TABLE", "NEW TABLE", "CREATE TABLE", "ADD TABLE"],
+"correctAnswer": "CREATE TABLE"
+},
+  {
+    "subject": "SQL",
+    "question": "Which SQL clause is used to filter rows?",
+    "options": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+    "correctAnswer": "WHERE"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which command is used to remove all rows from a table but keep the structure?",
+    "options": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+    "correctAnswer": "TRUNCATE"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which SQL function returns the total number of rows?",
+    "options": ["SUM()", "TOTAL()", "COUNT()", "ROWS()"],
+    "correctAnswer": "COUNT()"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which keyword is used to sort results in ascending order?",
+    "options": ["SORT", "ORDER BY", "ASC", "GROUP BY"],
+    "correctAnswer": "ASC"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which join returns matching rows from both tables only?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "INNER JOIN"],
+    "correctAnswer": "INNER JOIN"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which constraint ensures all values in a column are unique?",
+    "options": ["PRIMARY KEY", "NOT NULL", "UNIQUE", "CHECK"],
+    "correctAnswer": "UNIQUE"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which command adds a new column to an existing table?",
+    "options": ["MODIFY TABLE", "UPDATE TABLE", "ALTER TABLE", "ADD TABLE"],
+    "correctAnswer": "ALTER TABLE"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which aggregate function returns the average value?",
+    "options": ["MEAN()", "AVG()", "AVERAGE()", "MID()"],
+    "correctAnswer": "AVG()"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which clause groups rows having the same values?",
+    "options": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+    "correctAnswer": "GROUP BY"
+  },
+  {
+    "subject": "SQL",
+    "question": "Which key uniquely identifies each record in a table?",
+    "options": ["Foreign Key", "Candidate Key", "Primary Key", "Composite Key"],
+    "correctAnswer": "Primary Key"
+  }
+]

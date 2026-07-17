@@ -1,0 +1,122 @@
+[
+{
+"subject": "Java",
+"question": "Java is a ____ language.",
+"options": ["Markup", "Programming", "Database", "Query"],
+"correctAnswer": "Programming"
+},
+{
+"subject": "Java",
+"question": "Which keyword is used to create a class?",
+"options": ["class", "Class", "new", "create"],
+"correctAnswer": "class"
+},
+{
+"subject": "Java",
+"question": "Which method is the entry point of a Java program?",
+"options": ["start()", "run()", "main()", "execute()"],
+"correctAnswer": "main()"
+},
+{
+"subject": "Java",
+"question": "Which symbol is used to end a statement?",
+"options": [":", ".", ";", ","],
+"correctAnswer": ";"
+},
+{
+"subject": "Java",
+"question": "Java is ____ dependent.",
+"options": ["Platform", "Machine", "Compiler", "None"],
+"correctAnswer": "None"
+},
+{
+"subject": "Java",
+"question": "Which keyword is used for inheritance?",
+"options": ["extends", "implements", "inherits", "super"],
+"correctAnswer": "extends"
+},
+{
+"subject": "Java",
+"question": "Which package is automatically imported?",
+"options": ["java.util", "java.io", "java.lang", "java.net"],
+"correctAnswer": "java.lang"
+},
+{
+"subject": "Java",
+"question": "Which loop executes at least once?",
+"options": ["for", "while", "do-while", "foreach"],
+"correctAnswer": "do-while"
+},
+{
+"subject": "Java",
+"question": "Which operator compares values?",
+"options": ["=", "==", ":=", "!="],
+"correctAnswer": "=="
+},
+{
+"subject": "Java",
+"question": "Which concept allows multiple methods with same name?",
+"options": ["Inheritance", "Polymorphism", "Abstraction", "Encapsulation"],
+"correctAnswer": "Polymorphism"
+},
+  {
+    "subject": "Java",
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": ["implements", "extends", "inherits", "super"],
+    "correctAnswer": "extends"
+  },
+  {
+    "subject": "Java",
+    "question": "Which method is the entry point of a Java program?",
+    "options": ["start()", "run()", "main()", "init()"],
+    "correctAnswer": "main()"
+  },
+  {
+    "subject": "Java",
+    "question": "Which package is automatically imported in every Java program?",
+    "options": ["java.util", "java.io", "java.lang", "java.net"],
+    "correctAnswer": "java.lang"
+  },
+  {
+    "subject": "Java",
+    "question": "Which keyword is used to prevent inheritance?",
+    "options": ["const", "static", "final", "private"],
+    "correctAnswer": "final"
+  },
+  {
+    "subject": "Java",
+    "question": "Which collection does not allow duplicate elements?",
+    "options": ["ArrayList", "LinkedList", "HashSet", "Vector"],
+    "correctAnswer": "HashSet"
+  },
+  {
+    "subject": "Java",
+    "question": "Which exception occurs when dividing by zero?",
+    "options": ["NullPointerException", "ArithmeticException", "IOException", "ClassNotFoundException"],
+    "correctAnswer": "ArithmeticException"
+  },
+  {
+    "subject": "Java",
+    "question": "Which keyword refers to the current object?",
+    "options": ["self", "current", "this", "super"],
+    "correctAnswer": "this"
+  },
+  {
+    "subject": "Java",
+    "question": "Which interface is implemented by ArrayList?",
+    "options": ["Set", "Map", "List", "Queue"],
+    "correctAnswer": "List"
+  },
+  {
+    "subject": "Java",
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["catch", "try", "throw", "finally"],
+    "correctAnswer": "try"
+  },
+  {
+    "subject": "Java",
+    "question": "What is the size of an int in Java?",
+    "options": ["2 bytes", "4 bytes", "8 bytes", "Depends on system"],
+    "correctAnswer": "4 bytes"
+  }
+]

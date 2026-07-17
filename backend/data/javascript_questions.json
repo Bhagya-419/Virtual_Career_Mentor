@@ -1,0 +1,127 @@
+[
+  {
+    "subject": "JavaScript",
+    "question": "Which keyword is used to declare a block-scoped variable?",
+    "options": ["var", "let", "const", "both let and const"],
+    "correctAnswer": "both let and const"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.object()"],
+    "correctAnswer": "JSON.parse()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which method converts a JavaScript object into a JSON string?",
+    "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.toString()"],
+    "correctAnswer": "JSON.stringify()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "What is the output type of typeof null?",
+    "options": ["null", "undefined", "object", "string"],
+    "correctAnswer": "object"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which symbol is used for strict equality comparison?",
+    "options": ["==", "===", "!=", "="],
+    "correctAnswer": "==="
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which function is used to execute code after a delay?",
+    "options": ["setInterval()", "setTimeout()", "delay()", "wait()"],
+    "correctAnswer": "setTimeout()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which function repeatedly executes code at fixed intervals?",
+    "options": ["setTimeout()", "repeat()", "setInterval()", "loop()"],
+    "correctAnswer": "setInterval()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which keyword is used to create a Promise?",
+    "options": ["promise", "Promise", "new Promise", "async"],
+    "correctAnswer": "new Promise"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which keyword is used before a function to make it asynchronous?",
+    "options": ["await", "promise", "async", "defer"],
+    "correctAnswer": "async"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which keyword waits for a Promise to resolve?",
+    "options": ["async", "wait", "await", "resolve"],
+    "correctAnswer": "await"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which method is used to select an element by id?",
+    "options": ["querySelector()", "getElementById()", "getElement()", "selectById()"],
+    "correctAnswer": "getElementById()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which event occurs when a user clicks an element?",
+    "options": ["onchange", "onmouseover", "onclick", "onload"],
+    "correctAnswer": "onclick"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which array method adds an element at the end?",
+    "options": ["pop()", "shift()", "push()", "unshift()"],
+    "correctAnswer": "push()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which array method removes the last element?",
+    "options": ["pop()", "shift()", "push()", "splice()"],
+    "correctAnswer": "pop()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which method creates a new array by applying a function to each element?",
+    "options": ["filter()", "reduce()", "map()", "forEach()"],
+    "correctAnswer": "map()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which method filters elements based on a condition?",
+    "options": ["filter()", "map()", "reduce()", "find()"],
+    "correctAnswer": "filter()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A loop structure",
+      "A function with access to outer scope variables",
+      "An object method",
+      "A Promise"
+    ],
+    "correctAnswer": "A function with access to outer scope variables"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which operator is used for the spread syntax?",
+    "options": ["...", "**", "=>", "::"],
+    "correctAnswer": "..."
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which method is used to fetch data from APIs in modern JavaScript?",
+    "options": ["request()", "ajax()", "fetch()", "http()"],
+    "correctAnswer": "fetch()"
+  },
+  {
+    "subject": "JavaScript",
+    "question": "Which DOM method returns the first matching element?",
+    "options": ["querySelector()", "querySelectorAll()", "getElements()", "findElement()"],
+    "correctAnswer": "querySelector()"
+  }
+]

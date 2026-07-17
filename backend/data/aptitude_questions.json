@@ -1,0 +1,122 @@
+[
+{
+"subject": "Aptitude",
+"question": "What is 25% of 200?",
+"options": ["25", "50", "75", "100"],
+"correctAnswer": "50"
+},
+{
+"subject": "Aptitude",
+"question": "If a train travels 60 km in 1 hour, its speed is?",
+"options": ["30 km/h", "40 km/h", "60 km/h", "80 km/h"],
+"correctAnswer": "60 km/h"
+},
+{
+"subject": "Aptitude",
+"question": "What is the average of 10, 20, 30?",
+"options": ["15", "20", "25", "30"],
+"correctAnswer": "20"
+},
+{
+"subject": "Aptitude",
+"question": "What is 15 × 8?",
+"options": ["100", "110", "120", "130"],
+"correctAnswer": "120"
+},
+{
+"subject": "Aptitude",
+"question": "A shop gives 10% discount on ₹1000. Selling price?",
+"options": ["₹800", "₹850", "₹900", "₹950"],
+"correctAnswer": "₹900"
+},
+{
+"subject": "Aptitude",
+"question": "What is the square root of 144?",
+"options": ["10", "11", "12", "13"],
+"correctAnswer": "12"
+},
+{
+"subject": "Aptitude",
+"question": "Ratio of 2:4 simplifies to?",
+"options": ["1:2", "2:2", "1:4", "4:8"],
+"correctAnswer": "1:2"
+},
+{
+"subject": "Aptitude",
+"question": "What is 18% of 50?",
+"options": ["7", "8", "9", "10"],
+"correctAnswer": "9"
+},
+{
+"subject": "Aptitude",
+"question": "Simple interest on ₹1000 at 10% for 1 year?",
+"options": ["₹50", "₹100", "₹150", "₹200"],
+"correctAnswer": "₹100"
+},
+{
+"subject": "Aptitude",
+"question": "What comes next: 2, 4, 8, 16, ?",
+"options": ["18", "24", "30", "32"],
+"correctAnswer": "32"
+},
+  {
+    "subject": "Aptitude",
+    "question": "A train travels 120 km in 2 hours. What is its speed?",
+    "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+    "correctAnswer": "60 km/h"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "What is 25% of 200?",
+    "options": ["25", "40", "50", "75"],
+    "correctAnswer": "50"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "The ratio of boys to girls is 3:2. If there are 30 boys, how many girls are there?",
+    "options": ["15", "20", "25", "30"],
+    "correctAnswer": "20"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "A shopkeeper gives a 10% discount on a ₹500 item. What is the selling price?",
+    "options": ["₹400", "₹450", "₹475", "₹490"],
+    "correctAnswer": "₹450"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "Find the next number: 5, 10, 20, 40, ?",
+    "options": ["60", "70", "80", "90"],
+    "correctAnswer": "80"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "Simple interest on ₹1000 at 10% per annum for 2 years is:",
+    "options": ["₹100", "₹150", "₹200", "₹250"],
+    "correctAnswer": "₹200"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "A man buys an item for ₹800 and sells it for ₹1000. What is the profit percentage?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "correctAnswer": "25%"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "If 8 workers complete a task in 12 days, how many days will 16 workers take?",
+    "options": ["4", "6", "8", "10"],
+    "correctAnswer": "6"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "The average of 10, 20, 30, 40 and 50 is:",
+    "options": ["25", "30", "35", "40"],
+    "correctAnswer": "30"
+  },
+  {
+    "subject": "Aptitude",
+    "question": "A number is increased by 20% and becomes 120. What was the original number?",
+    "options": ["80", "90", "100", "110"],
+    "correctAnswer": "100"
+  }
+]

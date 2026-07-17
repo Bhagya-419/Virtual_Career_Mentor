@@ -1,0 +1,122 @@
+[
+  {
+    "subject": "HTML",
+    "question": "What does HTML stand for?",
+    "options": ["Hyper Text Markup Language", "High Text Machine Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
+    "correctAnswer": "Hyper Text Markup Language"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used to create a hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "correctAnswer": "<a>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which HTML tag is used for the largest heading?",
+    "options": ["<h6>", "<heading>", "<h1>", "<head>"],
+    "correctAnswer": "<h1>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used to insert an image?",
+    "options": ["<picture>", "<img>", "<image>", "<src>"],
+    "correctAnswer": "<img>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which attribute specifies the image path?",
+    "options": ["link", "src", "href", "path"],
+    "correctAnswer": "src"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag creates a line break?",
+    "options": ["<lb>", "<break>", "<br>", "<newline>"],
+    "correctAnswer": "<br>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used for an unordered list?",
+    "options": ["<ol>", "<ul>", "<li>", "<list>"],
+    "correctAnswer": "<ul>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used for a table row?",
+    "options": ["<td>", "<tr>", "<th>", "<table-row>"],
+    "correctAnswer": "<tr>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag defines a table cell?",
+    "options": ["<cell>", "<td>", "<tr>", "<th>"],
+    "correctAnswer": "<td>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used to create a form?",
+    "options": ["<input>", "<form>", "<fieldset>", "<submit>"],
+    "correctAnswer": "<form>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which input type hides entered characters?",
+    "options": ["text", "hidden", "password", "secure"],
+    "correctAnswer": "password"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which attribute provides alternative text for images?",
+    "options": ["title", "alt", "description", "name"],
+    "correctAnswer": "alt"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which HTML version introduced semantic tags like <article> and <section>?",
+    "options": ["HTML 3", "HTML 4", "HTML5", "XHTML"],
+    "correctAnswer": "HTML5"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag represents navigation links?",
+    "options": ["<navigation>", "<nav>", "<menu>", "<links>"],
+    "correctAnswer": "<nav>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used for page footer content?",
+    "options": ["<bottom>", "<footer>", "<end>", "<foot>"],
+    "correctAnswer": "<footer>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used to embed video content?",
+    "options": ["<media>", "<movie>", "<video>", "<play>"],
+    "correctAnswer": "<video>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used to embed audio?",
+    "options": ["<sound>", "<audio>", "<music>", "<mp3>"],
+    "correctAnswer": "<audio>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag is used to create a dropdown list?",
+    "options": ["<input>", "<list>", "<select>", "<dropdown>"],
+    "correctAnswer": "<select>"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which attribute makes an input field mandatory?",
+    "options": ["mandatory", "required", "validate", "needed"],
+    "correctAnswer": "required"
+  },
+  {
+    "subject": "HTML",
+    "question": "Which tag contains metadata about the webpage?",
+    "options": ["<body>", "<meta>", "<head>", "<title>"],
+    "correctAnswer": "<head>"
+  }
+]

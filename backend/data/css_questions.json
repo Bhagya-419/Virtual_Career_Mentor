@@ -1,0 +1,122 @@
+[
+  {
+    "subject": "CSS",
+    "question": "What does CSS stand for?",
+    "options": ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets"],
+    "correctAnswer": "Cascading Style Sheets"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property is used to change text color?",
+    "options": ["font-color", "text-color", "color", "foreground-color"],
+    "correctAnswer": "color"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property controls the text size?",
+    "options": ["font-style", "font-size", "text-size", "size"],
+    "correctAnswer": "font-size"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which selector selects an element by id?",
+    "options": [".demo", "#demo", "*demo", "demo"],
+    "correctAnswer": "#demo"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which selector selects elements by class?",
+    "options": ["#demo", ".demo", "*demo", "demo"],
+    "correctAnswer": ".demo"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property changes the background color?",
+    "options": ["color", "bgcolor", "background-color", "background"],
+    "correctAnswer": "background-color"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property is used to make text bold?",
+    "options": ["font-weight", "font-style", "text-bold", "weight"],
+    "correctAnswer": "font-weight"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which value of position keeps an element fixed on screen?",
+    "options": ["absolute", "relative", "fixed", "sticky"],
+    "correctAnswer": "fixed"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property adds space inside an element's border?",
+    "options": ["margin", "padding", "spacing", "border-space"],
+    "correctAnswer": "padding"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property adds space outside an element's border?",
+    "options": ["padding", "margin", "spacing", "gap"],
+    "correctAnswer": "margin"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which CSS property is used to create rounded corners?",
+    "options": ["corner-radius", "border-radius", "round-corner", "radius"],
+    "correctAnswer": "border-radius"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which display value hides an element?",
+    "options": ["hidden", "none", "invisible", "remove"],
+    "correctAnswer": "none"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property controls the stacking order of elements?",
+    "options": ["layer", "stack", "z-index", "index"],
+    "correctAnswer": "z-index"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which layout model is primarily one-dimensional?",
+    "options": ["Grid", "Flexbox", "Table", "Float"],
+    "correctAnswer": "Flexbox"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which layout model is designed for two-dimensional layouts?",
+    "options": ["Flexbox", "Grid", "Float", "Inline-block"],
+    "correctAnswer": "Grid"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property is used to align flex items horizontally?",
+    "options": ["align-items", "justify-content", "align-content", "flex-align"],
+    "correctAnswer": "justify-content"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property is used for smooth visual changes?",
+    "options": ["animation", "transform", "transition", "effect"],
+    "correctAnswer": "transition"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which unit is relative to the root element's font size?",
+    "options": ["px", "em", "rem", "%"],
+    "correctAnswer": "rem"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which pseudo-class applies styles when hovering over an element?",
+    "options": [":active", ":hover", ":focus", ":visited"],
+    "correctAnswer": ":hover"
+  },
+  {
+    "subject": "CSS",
+    "question": "Which property controls whether content overflows its container?",
+    "options": ["overflow", "content-flow", "wrap", "clip"],
+    "correctAnswer": "overflow"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "subject": "C",
+    "question": "Which function is used to print output in C?",
+    "options": ["print()", "printf()", "cout<<", "scanf()"],
+    "correctAnswer": "printf()"
+  },
+  {
+    "subject": "C",
+    "question": "Which header file is required for printf() and scanf()?",
+    "options": ["math.h", "stdlib.h", "stdio.h", "string.h"],
+    "correctAnswer": "stdio.h"
+  },
+  {
+    "subject": "C",
+    "question": "What is the size of int in most modern C compilers?",
+    "options": ["2 bytes", "4 bytes", "8 bytes", "16 bytes"],
+    "correctAnswer": "4 bytes"
+  },
+  {
+    "subject": "C",
+    "question": "Which operator is used to access the value at a memory address?",
+    "options": ["&", "*", "%", "#"],
+    "correctAnswer": "*"
+  },
+  {
+    "subject": "C",
+    "question": "Which symbol is used to get the address of a variable?",
+    "options": ["*", "&", "@", "%"],
+    "correctAnswer": "&"
+  },
+  {
+    "subject": "C",
+    "question": "What is the default return type of main() in C?",
+    "options": ["void", "char", "float", "int"],
+    "correctAnswer": "int"
+  },
+  {
+    "subject": "C",
+    "question": "Which loop executes at least once?",
+    "options": ["for", "while", "do-while", "nested loop"],
+    "correctAnswer": "do-while"
+  },
+  {
+    "subject": "C",
+    "question": "Which keyword is used to define a constant variable?",
+    "options": ["fixed", "const", "static", "final"],
+    "correctAnswer": "const"
+  },
+  {
+    "subject": "C",
+    "question": "What is the output type of strlen()?",
+    "options": ["char", "float", "int", "double"],
+    "correctAnswer": "int"
+  },
+  {
+    "subject": "C",
+    "question": "Which function is used to compare two strings?",
+    "options": ["strcat()", "strcmp()", "strlen()", "strcpy()"],
+    "correctAnswer": "strcmp()"
+  },
+  {
+    "subject": "C",
+    "question": "Which storage class retains value between function calls?",
+    "options": ["auto", "register", "static", "extern"],
+    "correctAnswer": "static"
+  },
+  {
+    "subject": "C",
+    "question": "Which data structure uses FIFO principle?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "correctAnswer": "Queue"
+  },
+  {
+    "subject": "C",
+    "question": "Which data structure uses LIFO principle?",
+    "options": ["Queue", "Array", "Stack", "Linked List"],
+    "correctAnswer": "Stack"
+  },
+  {
+    "subject": "C",
+    "question": "What is recursion?",
+    "options": [
+      "Function calling itself",
+      "Loop inside loop",
+      "Pointer operation",
+      "Array traversal"
+    ],
+    "correctAnswer": "Function calling itself"
+  },
+  {
+    "subject": "C",
+    "question": "Which function dynamically allocates memory?",
+    "options": ["malloc()", "printf()", "scanf()", "strlen()"],
+    "correctAnswer": "malloc()"
+  },
+  {
+    "subject": "C",
+    "question": "Which function releases dynamically allocated memory?",
+    "options": ["release()", "delete()", "free()", "remove()"],
+    "correctAnswer": "free()"
+  },
+  {
+    "subject": "C",
+    "question": "What is the index of the first element in an array?",
+    "options": ["1", "-1", "0", "Depends on compiler"],
+    "correctAnswer": "0"
+  },
+  {
+    "subject": "C",
+    "question": "Which operator has the highest precedence?",
+    "options": ["+", "*", "()", "="],
+    "correctAnswer": "()"
+  },
+  {
+    "subject": "C",
+    "question": "Which keyword is used to declare a structure?",
+    "options": ["class", "struct", "record", "object"],
+    "correctAnswer": "struct"
+  },
+  {
+    "subject": "C",
+    "question": "What is the time complexity of binary search?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+    "correctAnswer": "O(log n)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "subject": "Web Development",
+    "question": "Which technology is primarily responsible for webpage structure?",
+    "options": ["CSS", "JavaScript", "HTML", "React"],
+    "correctAnswer": "HTML"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which technology is used for styling webpages?",
+    "options": ["HTML", "CSS", "Node.js", "MongoDB"],
+    "correctAnswer": "CSS"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which technology is mainly used for webpage interactivity?",
+    "options": ["HTML", "CSS", "JavaScript", "SQL"],
+    "correctAnswer": "JavaScript"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which HTTP method is used to retrieve data?",
+    "options": ["POST", "PUT", "GET", "DELETE"],
+    "correctAnswer": "GET"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which HTTP method is commonly used to create new data?",
+    "options": ["GET", "POST", "DELETE", "PATCH"],
+    "correctAnswer": "POST"
+  },
+  {
+    "subject": "Web Development",
+    "question": "What does API stand for?",
+    "options": ["Application Programming Interface", "Advanced Program Integration", "Application Process Interface", "Advanced Processing Integration"],
+    "correctAnswer": "Application Programming Interface"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which database is commonly used with the MERN stack?",
+    "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+    "correctAnswer": "MongoDB"
+  },
+  {
+    "subject": "Web Development",
+    "question": "What does REST stand for?",
+    "options": ["Representational State Transfer", "Remote State Transfer", "Reliable State Transfer", "Resource State Tool"],
+    "correctAnswer": "Representational State Transfer"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which status code indicates success?",
+    "options": ["404", "500", "200", "301"],
+    "correctAnswer": "200"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which status code means 'Not Found'?",
+    "options": ["200", "201", "404", "500"],
+    "correctAnswer": "404"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which framework is commonly used for frontend development?",
+    "options": ["Express", "Node.js", "React", "MongoDB"],
+    "correctAnswer": "React"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which runtime environment executes JavaScript outside the browser?",
+    "options": ["React", "Express", "Node.js", "MongoDB"],
+    "correctAnswer": "Node.js"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which Express.js method defines a GET route?",
+    "options": ["app.post()", "app.get()", "app.put()", "app.delete()"],
+    "correctAnswer": "app.get()"
+  },
+  {
+    "subject": "Web Development",
+    "question": "What is JWT commonly used for?",
+    "options": ["Database Storage", "Authentication", "Styling", "Hosting"],
+    "correctAnswer": "Authentication"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which local storage option persists even after the browser is closed?",
+    "options": ["sessionStorage", "cookies", "localStorage", "cache"],
+    "correctAnswer": "localStorage"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which command installs project dependencies in Node.js?",
+    "options": ["npm run", "npm install", "node install", "npm start"],
+    "correctAnswer": "npm install"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which file stores project dependencies?",
+    "options": ["server.js", "index.js", "package.json", "config.js"],
+    "correctAnswer": "package.json"
+  },
+  {
+    "subject": "Web Development",
+    "question": "What is the main purpose of Git?",
+    "options": ["Database Management", "Version Control", "Hosting", "Authentication"],
+    "correctAnswer": "Version Control"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which Git command uploads local commits to GitHub?",
+    "options": ["git clone", "git commit", "git push", "git fetch"],
+    "correctAnswer": "git push"
+  },
+  {
+    "subject": "Web Development",
+    "question": "Which architecture separates frontend and backend concerns?",
+    "options": ["Monolithic", "Client-Server", "Stack", "Queue"],
+    "correctAnswer": "Client-Server"
+  }
+]
