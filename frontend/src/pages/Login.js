@@ -1,6 +1,7 @@
 import { useState } from "react"
 import API from "../services/api"
 import { useNavigate, Link } from "react-router-dom"
+import { toast } from "react-toastify"
 
 export default function Login() {
 
@@ -8,37 +9,50 @@ export default function Login() {
     const [password, setPassword] = useState("")
 
     const navigate = useNavigate()
-
     const handleLogin = async () => {
 
-        try {
-
-            const res = await API.post(
-                "/auth/login",
-                {
-                    email,
-                    password
-                }
-            )
-
-            localStorage.setItem(
-                "token",
-                res.data.token
-            )
-
-            alert("Login successful")
-
-            navigate("/dashboard")
-
-        } catch (error) {
-
-    alert(
-        error.response?.data?.message ||
-        error.response?.data?.error ||
-        "Login failed"
-    )
-}
+    // Email validation
+    if (!email.trim()) {
+        alert("Please enter your email")
+        return
     }
+
+    const emailRegex =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address")
+        return
+    }
+
+    // Password validation
+    if (!password) {
+        alert("Please enter your password")
+        return
+    }
+
+    try {
+
+        const res = await API.post("/auth/login",{email: email.trim(),password})
+
+        localStorage.setItem(
+            "token",
+            res.data.token
+        )
+
+        toast.success("Login successful")
+
+        navigate("/dashboard")
+
+    } catch (error) {
+
+        toast.error(
+            error.response?.data?.message ||
+            error.response?.data?.error ||
+            "Invalid email or password"
+        )
+    }
+}
 
     return (
 
@@ -57,7 +71,7 @@ export default function Login() {
                     background: "white",
                     padding: "40px",
                     borderRadius: "12px",
-                    width: "350px",
+                    width: "100%px",
                     boxShadow:
                         "0 4px 12px rgba(0,0,0,0.1)"
                 }}

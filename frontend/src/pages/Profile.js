@@ -1,19 +1,27 @@
 import { useState, useEffect } from "react"
 import API from "../services/api"
+import { toast } from "react-toastify"
 
 export default function Profile() {
 
 const [name, setName] = useState("")
 const [email, setEmail] = useState("")
-
 const [skills, setSkills] = useState([])
+const [qualification, setQualification] = useState("")
+const [experienceLevel, setExperienceLevel] = useState("Entry")
 
-const [qualification, setQualification] =
-    useState("")
-
-const [experienceLevel, setExperienceLevel] =
-    useState("Entry")
-
+const validSkills = [
+    "Python", "Java", "C", "C++", "JavaScript", "TypeScript", "HTML",
+    "CSS", "React", "Angular", "Vue.js", "Node.js", "Express.js", "Next.js",
+    "MongoDB", "SQL", "MySQL", "PostgreSQL", "Firebase", "Redis", "GraphQL",
+    "Git", "GitHub", "Docker", "Kubernetes", "AWS", "Azure", "REST API",
+    "Flask", "Django", "Spring Boot", "DSA", "OOP", "System Design", "DBMS",
+    "Operating Systems", "Computer Networks", "Machine Learning", "Deep Learning",
+    "Data Science", "Data Analysis", "NLP", "Computer Vision", "Excel", "Tableau",
+    "Power BI", "Communication", "Team Work", "Leadership", "Problem Solving",
+    "Time Management", "Adaptability", "Critical Thinking", "Creativity",
+    "Conflict Resolution", "Presentation Skills", "Decision Making"
+]
 
 useEffect(() => {
 
@@ -59,16 +67,64 @@ useEffect(() => {
 
 const handleUpdate = async () => {
 
+    // Qualification validation
+    if (!qualification.trim()) {
+        alert("Please enter your qualification")
+        return
+    }
+
+    if (qualification.trim().length < 2) {
+        alert("Please enter a valid qualification")
+        return
+    }
+
+    // Clean skills
+    const cleanedSkills = skills
+        .map(skill => skill.trim())
+        .filter(skill => skill !== "")
+
+    if (cleanedSkills.length === 0) {
+        alert("Please enter at least one skill")
+        return
+    }
+
+    // Check invalid skills
+    const invalidSkills = cleanedSkills.filter(
+        skill =>
+            !validSkills.some(
+                valid =>
+                    valid.toLowerCase() === skill.toLowerCase()
+            )
+    )
+
+    if (invalidSkills.length > 0) {
+        alert(
+            `Invalid skill(s): ${invalidSkills.join(", ")}\n\nPlease enter skills from the supported skills list.`
+        )
+        return
+    }
+
+    // Remove duplicates and keep correct capitalization
+    const uniqueSkills = [
+        ...new Set(
+            cleanedSkills.map(skill => skill.toLowerCase())
+        )
+    ].map(lowerSkill =>
+        validSkills.find(
+            skill =>
+                skill.toLowerCase() === lowerSkill
+        )
+    )
+
     try {
 
-        const token =
-            localStorage.getItem("token")
+        const token = localStorage.getItem("token")
 
         await API.put(
             "/profile/update",
             {
-                skills,
-                qualification,
+                skills: uniqueSkills,
+                qualification: qualification.trim(),
                 experienceLevel
             },
             {
@@ -79,13 +135,18 @@ const handleUpdate = async () => {
             }
         )
 
-        alert("Profile updated successfully")
+        setSkills(uniqueSkills)
+
+        toast.success("Profile updated successfully")
 
     } catch (error) {
 
         console.log(error)
 
-        alert("Update failed")
+        toast.error(
+            error.response?.data?.message ||
+            "Update failed"
+        )
     }
 }
 

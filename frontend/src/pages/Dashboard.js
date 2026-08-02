@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react"
 import API from "../services/api"
 import {useNavigate} from "react-router-dom"
+import { toast } from "react-toastify"
 
 export default function Dashboard() {
 
   const [user, setUser] = useState(null)
   const [quizAttempts, setQuizAttempts] = useState([])
-  const [showAttempts, setShowAttempts] = useState(false)
   const navigate = useNavigate()
-const [showSavedJobs, setShowSavedJobs] = useState(false)
 
   useEffect(() => {
 
@@ -71,7 +70,7 @@ const [showSavedJobs, setShowSavedJobs] = useState(false)
       marginBottom: "10px"
     }}
   >
-    AI-Powered Career Guidance Platform
+    Smart Career Guidance Platform
   </h2>
 
   <p
@@ -80,10 +79,10 @@ const [showSavedJobs, setShowSavedJobs] = useState(false)
       lineHeight: "1.6"
     }}
   >
-    Discover personalized career paths,
-    analyze resumes with ATS scoring,
-    and get intelligent job recommendations
-    based on your profile and skills.
+    Explore personalized career recommendations, 
+    analyze your resume with ATS scoring,
+    assess your skills through quizzes,
+    and get AI-powered career guidance.
   </p>
 
 </div>

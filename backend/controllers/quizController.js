@@ -55,15 +55,9 @@ exports.submitQuiz = async (req, res) => {
 
     try {
 
-        const {
-            answers,
-            subject,
-            questionCount
-        } = req.body
+        const {answers,subject,questionCount} = req.body
 
-        const questions = await Quiz.find({
-            subject
-        }).limit(questionCount)
+        const questions = await Quiz.find({subject}).limit(questionCount)
 
         let score = 0
 

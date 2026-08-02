@@ -1,144 +1,82 @@
-import { Link, useNavigate } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
+
 export default function Navbar() {
     const navigate = useNavigate()
     const token = localStorage.getItem("token")
-    const handleLogout = () => {
-    localStorage.removeItem("token")
-    window.location.href = "/"
-}
-    return (
 
+    const handleLogout = () => {
+        localStorage.removeItem("token")
+        window.location.href = "/"
+    }
+
+    const linkStyle = ({ isActive }) => ({
+        color: isActive ? "#4f46e5" : "#374151",
+        background: isActive ? "#eef2ff" : "transparent",
+        textDecoration: "none",
+        fontSize: "14px",
+        fontWeight: 600,
+        padding: "8px 14px",
+        borderRadius: "8px",
+        transition: "background 0.15s ease, color 0.15s ease",
+    })
+
+    return (
         <nav
             style={{
                 display: "flex",
-                gap: "20px",
-                padding: "15px 25px",
-                background: "#222",
-                color: "white",
-                alignItems: "center"
+                alignItems: "center",
+                gap: "6px",
+                padding: "14px 32px",
+                background: "#ffffff",
+                borderBottom: "1px solid #e6e8f0",
+                position: "sticky",
+                top: 0,
+                zIndex: 100,
             }}
         >
-
             <h2
                 style={{
-                    marginRight: "30px"
+                    margin: 0,
+                    marginRight: "28px",
+                    fontSize: "18px",
+                    fontWeight: 700,
+                    color: "#1a1b25",
+                    whiteSpace: "nowrap",
                 }}
             >
-                Virtual Career Mentor
+                🎓 Virtual Career Mentor
             </h2>
 
-            <Link
-                to="/dashboard"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                Dashboard
-            </Link>
-
-            <Link
-                to="/quiz"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                Quiz
-            </Link>
-
-            <Link
-                to="/jobs"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                Jobs
-            </Link>
-
-            <Link
-                to="/resume-analyzer"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                Resume Analyzer
-            </Link>
-
-            <Link
-                to="/chatbot"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                AI Mentor
-            </Link>
+            <NavLink to="/dashboard" style={linkStyle}>Dashboard</NavLink>
+            <NavLink to="/quiz" style={linkStyle}>Quiz</NavLink>
+            <NavLink to="/jobs" style={linkStyle}>Jobs</NavLink>
+            <NavLink to="/resume-analyzer" style={linkStyle}>Resume Analyzer</NavLink>
+            <NavLink to="/chatbot" style={linkStyle}>AI Mentor</NavLink>
 
             <div
-    style={{
-        marginLeft: "auto",
-        display: "flex",
-        alignItems: "center",
-        gap: "15px"
-    }}
->
-
-    {token ? (
-        <>
-            <Link
-                to="/profile"
                 style={{
-                    color: "white",
-                    textDecoration: "none",
-                    fontSize: "15px"
+                    marginLeft: "auto",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
                 }}
             >
-                👤 Profile
-            </Link>
-
-            <button
-                onClick={handleLogout}
-                style={{
-                    padding: "8px 14px",
-                    border: "none",
-                    backgroundColor: "#ff4d4d",
-                    color: "white",
-                    borderRadius: "6px",
-                    cursor: "pointer"
-                }}
-            >
-                Logout
-            </button>
-        </>
-    ) : (
-        <>
-            <Link
-                to="/"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                Login
-            </Link>
-
-            <Link
-                to="/register"
-                style={{
-                    color: "white",
-                    textDecoration: "none"
-                }}
-            >
-                Register
-            </Link>
-        </>
-    )}
-
-</div>
-
+                {token ? (
+                    <>
+                        <NavLink to="/profile" style={linkStyle}>👤 Profile</NavLink>
+                        <button className="btn btn-danger" onClick={handleLogout}>
+                            Logout
+                        </button>
+                    </>
+                ) : (
+                    <>
+                        <NavLink to="/" style={linkStyle}>Login</NavLink>
+                        <NavLink to="/register" className="btn btn-primary" style={{textDecoration: "none"}}>
+                            Register
+                        </NavLink>
+                    </>
+                )}
+            </div>
         </nav>
     )
 }

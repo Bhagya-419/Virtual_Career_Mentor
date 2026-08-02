@@ -1,247 +1,234 @@
 import { useEffect, useState } from "react"
 import API from "../services/api"
+import { toast } from "react-toastify"
 
 export default function ChatHistory() {
 
-const [chats,setChats]=useState([])
-const [search,setSearch]=useState("")
+    const [chats, setChats] = useState([])
+    const [search, setSearch] = useState("")
 
-const fetchChats=async()=>{
+    const fetchChats = async () => {
+        try {
+            const token = localStorage.getItem("token")
 
-try{
+            const res = await API.get("/chat/history", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
 
-const token=localStorage.getItem("token")
+            setChats(res.data)
+        } catch (error) {
+            toast.error(
+                error.response?.data?.message || "Failed to load chat history"
+            )
+        }
+    }
 
-const res=await API.get("/chat/history",{
-headers:{
-Authorization:`Bearer ${token}`
-}
-})
+    useEffect(() => {
+        fetchChats()
+    }, [])
 
-setChats(res.data)
+    const deleteChat = async (id) => {
+        try {
+            const token = localStorage.getItem("token")
 
-}catch(error){
+            await API.delete(`/chat/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
 
-console.log(error)
+            toast.success("Chat deleted")
+            fetchChats()
+        } catch (error) {
+            toast.error(
+                error.response?.data?.message || "Failed to delete chat"
+            )
+        }
+    }
 
-}
+    const clearHistory = async () => {
+        if (!window.confirm("Clear all chat history?")) return
 
-}
+        try {
+            const token = localStorage.getItem("token")
 
-useEffect(()=>{
-fetchChats()
-},[])
+            await API.delete("/chat/clear", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
 
-const deleteChat=async(id)=>{
+            setChats([])
+            toast.success("Chat history cleared")
+        } catch (error) {
+            toast.error(
+                error.response?.data?.message || "Failed to clear history"
+            )
+        }
+    }
 
-try{
+    const filteredChats = chats.filter(chat =>
+        chat.question.toLowerCase().includes(search.toLowerCase()) ||
+        chat.answer.toLowerCase().includes(search.toLowerCase())
+    )
 
-const token=localStorage.getItem("token")
+    return (
+        <div
+            style={{
+                maxWidth: "950px",
+                margin: "30px auto",
+                padding: "20px"
+            }}
+        >
 
-await API.delete(`/chat/${id}`,{
-headers:{
-Authorization:`Bearer ${token}`
-}
-})
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: "20px"
+                }}
+            >
 
-fetchChats()
+                <h1>Chat History</h1>
 
-}catch(error){
+                <button
+                    onClick={clearHistory}
+                    style={{
+                        background: "#f44336",
+                        color: "white",
+                        border: "none",
+                        padding: "10px 16px",
+                        borderRadius: "6px",
+                        cursor: "pointer"
+                    }}
+                >
+                    Clear All
+                </button>
 
-console.log(error)
+            </div>
 
-}
+            <input
+                type="text"
+                placeholder="🔍 Search history..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                style={{
+                    width: "100%",
+                    padding: "12px",
+                    marginBottom: "25px",
+                    borderRadius: "8px",
+                    border: "1px solid #ccc"
+                }}
+            />
 
-}
+            {
+                filteredChats.length === 0 ? (
 
-const clearHistory=async()=>{
+                    <p>No chat history found.</p>
 
-if(!window.confirm("Clear all chat history?")) return
+                ) : (
 
-try{
+                    filteredChats.map(chat => (
 
-const token=localStorage.getItem("token")
+                        <div
+                            key={chat._id}
+                            style={{
+                                border: "1px solid #ddd",
+                                borderRadius: "12px",
+                                padding: "18px",
+                                marginBottom: "20px",
+                                background: "#fff",
+                                boxShadow: "0 2px 8px rgba(0,0,0,0.08)"
+                            }}
+                        >
 
-await API.delete("/chat/clear",{
-headers:{
-Authorization:`Bearer ${token}`
-}
-})
+                            <p>
+                                <strong>You:</strong> {chat.question}
+                            </p>
 
-setChats([])
+                            <p>
+                                <strong>AI:</strong> {chat.answer}
+                            </p>
 
-}catch(error){
+                            {
+                                chat.resources && chat.resources.length > 0 && (
 
-console.log(error)
+                                    <div
+                                        style={{
+                                            marginTop: "15px"
+                                        }}
+                                    >
 
-}
+                                        <h4 style={{ marginBottom: "10px" }}>
+                                            📚 Resources
+                                        </h4>
 
-}
+                                        {
+                                            chat.resources.map((resource, index) => (
 
-const filteredChats=chats.filter(chat=>
-chat.question.toLowerCase().includes(search.toLowerCase())||
-chat.answer.toLowerCase().includes(search.toLowerCase())
-)
+                                                <div
+                                                    key={index}
+                                                    style={{
+                                                        marginBottom: "12px"
+                                                    }}
+                                                >
+                                                    <a
+                                                        href={resource.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        style={{
+                                                            fontWeight: "bold",
+                                                            color: "#1976d2",
+                                                            textDecoration: "none"
+                                                        }}
+                                                    >
+                                                        {resource.title}
+                                                    </a>
+                                                </div>
 
-return(
+                                            ))
+                                        }
 
-<div
-style={{
-maxWidth:"950px",
-margin:"30px auto",
-padding:"20px"
-}}
->
+                                    </div>
 
-<div
-style={{
-display:"flex",
-justifyContent:"space-between",
-alignItems:"center",
-marginBottom:"20px"
-}}
->
+                                )
+                            }
 
-<h1>Chat History</h1>
+                            <small
+                                style={{
+                                    color: "gray"
+                                }}
+                            >
+                                {new Date(chat.createdAt).toLocaleString()}
+                            </small>
 
-<button
-onClick={clearHistory}
-style={{
-background:"#f44336",
-color:"white",
-border:"none",
-padding:"10px 16px",
-borderRadius:"6px",
-cursor:"pointer"
-}}
->
-Clear All
-</button>
+                            <br />
 
-</div>
+                            <button
+                                onClick={() => deleteChat(chat._id)}
+                                style={{
+                                    marginTop: "12px",
+                                    background: "#e53935",
+                                    color: "white",
+                                    border: "none",
+                                    padding: "8px 14px",
+                                    borderRadius: "6px",
+                                    cursor: "pointer"
+                                }}
+                            >
+                                Delete
+                            </button>
 
-<input
-type="text"
-placeholder="🔍 Search history..."
-value={search}
-onChange={(e)=>setSearch(e.target.value)}
-style={{
-width:"100%",
-padding:"12px",
-marginBottom:"25px",
-borderRadius:"8px",
-border:"1px solid #ccc"
-}}
-/>
+                        </div>
 
-{
-filteredChats.length===0?
+                    ))
 
-<p>No chat history found.</p>
+                )
+            }
 
-:
-
-filteredChats.map(chat=>(
-
-<div
-key={chat._id}
-style={{
-border:"1px solid #ddd",
-borderRadius:"12px",
-padding:"18px",
-marginBottom:"20px",
-background:"#fff",
-boxShadow:"0 2px 8px rgba(0,0,0,0.08)"
-}}
->
-
-<p>
-<strong>You:</strong> {chat.question}
-</p>
-
-<p>
-<strong>AI:</strong> {chat.answer}
-</p>
-
-{
-chat.resources&&chat.resources.length>0&&(
-
-<div
-style={{
-marginTop:"15px"
-}}
->
-
-<h4 style={{marginBottom:"10px"}}>
-📚 Resources
-</h4>
-
-{
-chat.resources.map((resource,index)=>(
-
-<div
-key={index}
-style={{
-marginBottom:"12px"
-}}
->
-
-<a
-href={resource.url}
-target="_blank"
-rel="noopener noreferrer"
-style={{
-fontWeight:"bold",
-color:"#1976d2",
-textDecoration:"none"
-}}
->
-{resource.title}
-</a>
-
-</div>
-
-))
-}
-
-</div>
-
-)
-}
-
-<small
-style={{
-color:"gray"
-}}
->
-{new Date(chat.createdAt).toLocaleString()}
-</small>
-
-<br/>
-
-<button
-onClick={()=>deleteChat(chat._id)}
-style={{
-marginTop:"12px",
-background:"#e53935",
-color:"white",
-border:"none",
-padding:"8px 14px",
-borderRadius:"6px",
-cursor:"pointer"
-}}
->
-Delete
-</button>
-
-</div>
-
-))
-
-}
-
-</div>
-
-)
-
+        </div>
+    )
 }

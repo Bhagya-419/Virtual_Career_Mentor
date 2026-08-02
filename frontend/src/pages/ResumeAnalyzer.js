@@ -1,5 +1,6 @@
 import { useState } from "react"
 import API from "../services/api"
+import { toast } from "react-toastify"
 
 // ── Helpers ───────────────────────────────────────────────────────
 const scoreColor = (score) => {
@@ -156,29 +157,65 @@ export default function ResumeAnalyzer() {
   const [activeTab, setActiveTab] = useState("overview")
 
   const handleAnalyze = async () => {
-    if (!resume) { alert("Please upload a resume PDF first."); return }
-    setLoading(true)
-    setResult(null)
-    try {
-      const formData = new FormData()
-      formData.append("resume", resume)
-      formData.append("jobDescription", jobDescription)
-      const token = localStorage.getItem("token")
-      const response = await API.post("/resume/analyze", formData, {
+  // Check if resume is selected
+  if (!resume) {
+    alert("Please upload a resume PDF first.")
+    return
+  }
+  // Check file type
+  if (resume.type !== "application/pdf") {
+    alert("Only PDF files are allowed.")
+    setResume(null)
+    return
+  }
+  // Check file size (maximum 5 MB)
+  const maxSize = 5 * 1024 * 1024
+  if (resume.size > maxSize) {
+    alert("Resume file size must be less than 5 MB.")
+    setResume(null)
+    return
+  }
+  // Check job description length
+  if (jobDescription.length > 10000) {
+    alert("Job description is too long. Please keep it below 10,000 characters.")
+    return
+  }
+  setLoading(true)
+  setResult(null)
+  try {
+    const formData = new FormData()
+    formData.append("resume", resume)
+    formData.append("jobDescription", jobDescription.trim())
+    const token = localStorage.getItem("token")
+    const response = await API.post(
+      "/resume/analyze",
+      formData,
+      {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data"
         }
-      })
-      setResult(response.data)
-      setActiveTab("overview")
-    } catch (error) {
-      console.error(error)
+      }
+    )
+    setResult(response.data)
+    setActiveTab("overview")
+  } catch (error) {
+    console.error(error)
+    if (error.response?.status === 400) {
+      alert(
+        error.response?.data?.message ||
+        "Invalid resume or input."
+      )
+    } else if (error.response?.status === 401) {
+      alert("Session expired. Please login again.")
+    } else {
       alert("Analysis failed. Please try again.")
-    } finally {
-      setLoading(false)
     }
+
+  } finally {
+    setLoading(false)
   }
+}
 
   const tabs = ["overview", "keywords", "sections", "suggestions"]
 
@@ -219,7 +256,21 @@ export default function ResumeAnalyzer() {
                 </span>
                 <input
                   type="file" accept=".pdf"
-                  onChange={e => setResume(e.target.files[0])}
+                  onChange={e => {
+                  const file = e.target.files[0]
+                  if (!file) return
+                  if (file.type !== "application/pdf") {
+                    alert("Only PDF files are allowed.")
+                    e.target.value = ""
+                    return
+                  }
+                  if (file.size > 5 * 1024 * 1024) {
+                    alert("File size must be less than 5 MB.")
+                    e.target.value = ""
+                    return
+                  }
+                  setResume(file)
+                }}
                   style={{ display: "none" }}
                 />
               </label>

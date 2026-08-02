@@ -1,6 +1,7 @@
 import API from "../services/api"
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import { toast } from "react-toastify"
 
 export default function Chatbot() {
     const navigate = useNavigate()
@@ -83,16 +84,25 @@ export default function Chatbot() {
         "Suggest projects for my profile",
         "How to become a Data Scientist?"
 ]    
+const handleKeyDown = (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+    }
+};
 
     return (
 
         <div
-            style={{
-                padding: "30px",
-                background: "#f4f4f4",
-                minHeight: "100vh"
-            }}
-        >
+    style={{
+        height: "calc(100vh - 70px)",   // navbar height
+        background: "#f4f4f4",
+        padding: "20px",
+        display: "flex",
+        flexDirection: "column",
+        overflow: "hidden"
+    }}
+>
 
             <div
     style={{
@@ -134,12 +144,15 @@ export default function Chatbot() {
     </button>
 
 </div>
-                <div
+
+<div
     style={{
         display: "flex",
-        flexWrap: "wrap",
         gap: "10px",
-        marginBottom: "20px"
+        marginBottom: "15px",
+        overflowX: "auto",
+        whiteSpace: "nowrap",
+        paddingBottom: "5px"
     }}
 >
 
@@ -168,16 +181,16 @@ export default function Chatbot() {
 
 </div>
             <div
-                style={{
-                    background: "white",
-                    borderRadius: "12px",
-                    padding: "20px",
-                    height: "500px",
-                    overflowY: "auto",
-                    boxShadow:
-                        "0 2px 10px rgba(0,0,0,0.1)"
-                }}
-            >
+    style={{
+        flex: 1,
+        background: "white",
+        borderRadius: "12px",
+        padding: "20px",
+        overflowY: "auto",
+        minHeight: 0,
+        boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
+    }}
+>
 
                 {
                     chat.map((msg, index) => (
@@ -291,32 +304,30 @@ export default function Chatbot() {
             }
             </div>
 
-            <div
-                style={{
-                    display: "flex",
-                    marginTop: "20px",
-                    gap: "10px"
-                }}
-            >
-
-                <input
-                    type="text"
-
-                    value={message}
-
-                    placeholder="Ask career questions..."
-
-                    onChange={(e) =>
-                        setMessage(e.target.value)
-                    }
-
-                    style={{
-                        flex: 1,
-                        padding: "12px",
-                        borderRadius: "8px",
-                        border: "1px solid #ccc"
-                    }}
-                />
+        <div
+            style={{
+                display: "flex",
+                gap: "10px",
+                marginTop: "15px",
+                flexShrink: 0
+            }}
+        >
+            <textarea
+            value={message}
+            placeholder="Ask career questions..."
+            onChange={(e) => setMessage(e.target.value)}
+            onKeyDown={handleKeyDown}
+            rows={2}
+            style={{
+                flex: 1,
+                padding: "12px",
+                borderRadius: "8px",
+                border: "1px solid #ccc",
+                resize: "none",
+                fontFamily: "inherit",
+                fontSize: "15px"
+            }}
+        />
 
                 <button
                     onClick={sendMessage}
