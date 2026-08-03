@@ -4,6 +4,7 @@ import { toast } from "react-toastify"
 const API = axios.create({
     baseURL: import.meta.env.VITE_API_URL
 })
+console.log("API BASE URL:", API.defaults.baseURL)
 
 // Attach token automatically to every request
 API.interceptors.request.use((config) => {
