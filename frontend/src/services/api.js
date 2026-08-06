@@ -1,9 +1,11 @@
 import axios from "axios"
 import { toast } from "react-toastify"
-const API = axios.create({
-    baseURL: process.env.REACT_APP_API_URL
 
+const API = axios.create({
+    baseURL: process.env.REACT_APP_API_URL || "https://virtual-career-mentor-backend.onrender.com/api",
+    withCredentials: true
 })
+
 // Attach token automatically to every request
 API.interceptors.request.use((config) => {
     const token = localStorage.getItem("token")

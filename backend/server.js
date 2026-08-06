@@ -1,43 +1,50 @@
 require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
-const connectDB=require("./config/db")
+const connectDB = require("./config/db")
 const authRoutes = require("./routes/authRoutes")
 const userRoutes = require("./routes/userRoutes")
-const quizRoutes =require("./routes/quizRoutes")
-const resumeRoutes=require("./routes/resumeRoutes")
+const quizRoutes = require("./routes/quizRoutes")
+const resumeRoutes = require("./routes/resumeRoutes")
 const chatRoutes = require("./routes/chatRoutes")
 const profileRoutes = require("./routes/profileRoutes")
 const dashboardRoutes = require("./routes/dashboardRoutes")
 const jobRoutes = require("./routes/jobRoutes")
-const {loadDataset} = require("./utils/loadDataset")
-
-
+const { loadDataset } = require("./utils/loadDataset")
 
 connectDB()
 loadDataset()
 
 const app = express()
+
 const allowedOrigins = [
   "http://localhost:3000",
+  "http://localhost:5173",
   "https://virtual-career-mentor-frontend.onrender.com"
 ]
 
 app.use(cors({
   origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true)
+    // Allow requests with no origin (like mobile apps, curl, or Postman)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
     } else {
-      callback(new Error("Not allowed by CORS"))
+      callback(new Error('Not allowed by CORS'));
     }
   },
-  credentials: true
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }))
+
 app.use(express.json())
-app.use("/api/auth",authRoutes)
-app.use("/api/user",userRoutes)
+
+app.use("/api/auth", authRoutes)
+app.use("/api/user", userRoutes)
 app.use("/api/quiz", quizRoutes)
-app.use("/api/resume",resumeRoutes)
+app.use("/api/resume", resumeRoutes)
 app.use("/api/chat", chatRoutes)
 app.use("/api/profile", profileRoutes)
 app.use("/api/dashboard", dashboardRoutes)
