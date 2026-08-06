@@ -9,7 +9,6 @@ loadDataset()
 
 const app = express()
 
-// 1. MUST BE AT THE VERY TOP BEFORE ANY ROUTES
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
@@ -28,10 +27,9 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }))
-app.options('*', cors())
+
 app.use(express.json())
 
-// 2. IMPORT AND USE ROUTES AFTER CORS
 const authRoutes = require("./routes/authRoutes")
 const userRoutes = require("./routes/userRoutes")
 const quizRoutes = require("./routes/quizRoutes")
