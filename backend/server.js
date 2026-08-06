@@ -2,14 +2,6 @@ require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 const connectDB = require("./config/db")
-const authRoutes = require("./routes/authRoutes")
-const userRoutes = require("./routes/userRoutes")
-const quizRoutes = require("./routes/quizRoutes")
-const resumeRoutes = require("./routes/resumeRoutes")
-const chatRoutes = require("./routes/chatRoutes")
-const profileRoutes = require("./routes/profileRoutes")
-const dashboardRoutes = require("./routes/dashboardRoutes")
-const jobRoutes = require("./routes/jobRoutes")
 const { loadDataset } = require("./utils/loadDataset")
 
 connectDB()
@@ -17,6 +9,7 @@ loadDataset()
 
 const app = express()
 
+// 1. MUST BE AT THE VERY TOP BEFORE ANY ROUTES
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
@@ -25,13 +18,10 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps, curl, or Postman)
-    if (!origin) return callback(null, true);
-    
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true)
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error('Not allowed by CORS'))
     }
   },
   credentials: true,
@@ -40,6 +30,16 @@ app.use(cors({
 }))
 
 app.use(express.json())
+
+// 2. IMPORT AND USE ROUTES AFTER CORS
+const authRoutes = require("./routes/authRoutes")
+const userRoutes = require("./routes/userRoutes")
+const quizRoutes = require("./routes/quizRoutes")
+const resumeRoutes = require("./routes/resumeRoutes")
+const chatRoutes = require("./routes/chatRoutes")
+const profileRoutes = require("./routes/profileRoutes")
+const dashboardRoutes = require("./routes/dashboardRoutes")
+const jobRoutes = require("./routes/jobRoutes")
 
 app.use("/api/auth", authRoutes)
 app.use("/api/user", userRoutes)
