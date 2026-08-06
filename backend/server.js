@@ -18,10 +18,21 @@ connectDB()
 loadDataset()
 
 const app = express()
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://virtual-career-mentor-frontend.onrender.com"
+]
+
 app.use(cors({
-  origin: "https://virtual-career-mentor-frontend.onrender.com",
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true)
+    } else {
+      callback(new Error("Not allowed by CORS"))
+    }
+  },
   credentials: true
-}));
+}))
 app.use(express.json())
 app.use("/api/auth",authRoutes)
 app.use("/api/user",userRoutes)
