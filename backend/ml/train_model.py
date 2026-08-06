@@ -45,29 +45,6 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42,
 )
 
-# Preprocessor
-preprocessor = ColumnTransformer(
-
-    transformers=[
-
-        (
-            "skills",
-            TfidfVectorizer(),
-            "skills"
-        ),
-
-        (
-            "cat",
-            OneHotEncoder(
-                handle_unknown="ignore"
-            ),
-            [
-                "qualification",
-                "experience_level"
-            ]
-        )
-    ]
-)
 
 models = {
 
@@ -97,6 +74,10 @@ best_accuracy = 0
 best_name = ""
 
 for name, classifier in models.items():
+    preprocessor = ColumnTransformer(
+
+    transformers=[("skills",TfidfVectorizer(),"skills"),("cat",OneHotEncoder(handle_unknown="ignore"),["qualification","experience_level"])]
+)
 
     pipeline = Pipeline([
 

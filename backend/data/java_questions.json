@@ -25,9 +25,9 @@
 },
 {
 "subject": "Java",
-"question": "Java is ____ dependent.",
-"options": ["Platform", "Machine", "Compiler", "None"],
-"correctAnswer": "None"
+"question": "Java is platform-independent because of the use of ____.",
+"options": ["JVM", "JDK", "Compiler", "IDE"],
+"correctAnswer": "JVM"
 },
 {
 "subject": "Java",
@@ -111,7 +111,7 @@
     "subject": "Java",
     "question": "Which keyword is used to handle exceptions?",
     "options": ["catch", "try", "throw", "finally"],
-    "correctAnswer": "try"
+    "correctAnswer": "catch"
   },
   {
     "subject": "Java",

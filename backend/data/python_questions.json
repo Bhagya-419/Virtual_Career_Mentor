@@ -75,7 +75,7 @@
     "subject": "Python",
     "question": "Which keyword is used to handle exceptions?",
     "options": ["catch", "try", "handle", "except"],
-    "correctAnswer": "try"
+    "correctAnswer": "except"
   },
   {
     "subject": "Python",

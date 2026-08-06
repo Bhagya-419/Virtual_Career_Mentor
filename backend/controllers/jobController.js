@@ -67,8 +67,7 @@ exports.recommendJob = async (req, res) => {
                 message: "User not found"
             })
         }
-        const response = await axios.post("https://virtual-career-mentor-ml.onrender.com/predict",
-            {
+        const response = await axios.post("https://virtual-career-mentor-ml.onrender.com/predict",            {
                 skills: (user.skills || []).join(", "),
                 qualification: user.qualification,
                 experience_level: user.experienceLevel

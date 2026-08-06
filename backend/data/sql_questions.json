@@ -81,7 +81,7 @@
     "subject": "SQL",
     "question": "Which keyword is used to sort results in ascending order?",
     "options": ["SORT", "ORDER BY", "ASC", "GROUP BY"],
-    "correctAnswer": "ASC"
+    "correctAnswer": "ORDER BY"
   },
   {
     "subject": "SQL",

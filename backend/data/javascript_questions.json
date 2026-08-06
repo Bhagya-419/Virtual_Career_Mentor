@@ -116,7 +116,7 @@
     "subject": "JavaScript",
     "question": "Which method is used to fetch data from APIs in modern JavaScript?",
     "options": ["request()", "ajax()", "fetch()", "http()"],
-    "correctAnswer": "fetch()"
+    "correctAnswer": "fetch()" 
   },
   {
     "subject": "JavaScript",
