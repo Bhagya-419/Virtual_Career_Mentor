@@ -12,12 +12,16 @@ const dashboardRoutes = require("./routes/dashboardRoutes")
 const jobRoutes = require("./routes/jobRoutes")
 const {loadDataset} = require("./utils/loadDataset")
 
+app.use(cors({
+  origin: "https://virtual-career-mentor-frontend.onrender.com",
+  credentials: true
+}));
+
 connectDB()
 loadDataset()
 
 const app = express()
 
-app.use(cors())
 app.use(express.json())
 app.use("/api/auth",authRoutes)
 app.use("/api/user",userRoutes)
