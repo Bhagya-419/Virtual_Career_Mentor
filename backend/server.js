@@ -12,20 +12,20 @@ const app = express()
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  "https://virtual-career-mentor-frontend.onrender.com",
-  "https://virtualcareermentor.vercel.app" ,
-  "https://virtualcareermentor-6dpla2p2z-bhagyas-projects-16429864.vercel.app" 
+  "https://virtual-career-mentor-frontend.onrender.com"
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    // allow requests with no origin (like mobile apps or curl requests)
+    // Allow requests with no origin (like Postman or mobile apps)
     if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) === -1) {
-      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-      return callback(new Error(msg), false);
+    
+    // Check if origin is in allowed list OR ends with .vercel.app
+    if (allowedOrigins.indexOf(origin) !== -1 || origin.endsWith('.vercel.app')) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'), false);
     }
-    return callback(null, true);
   },
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
