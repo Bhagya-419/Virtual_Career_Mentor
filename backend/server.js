@@ -12,16 +12,24 @@ const app = express()
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  "https://virtual-career-mentor-frontend.onrender.com"
-]
+  "https://virtual-career-mentor-frontend.onrender.com",
+  "https://virtualcareermentor.vercel.app" // <- Mee live Vercel frontend URL ikkada add chesam
+];
 
 app.use(cors({
-  origin: '*',
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
-}))
-
+}));
 app.use(express.json())
 
 const authRoutes = require("./routes/authRoutes")
