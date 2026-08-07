@@ -13,7 +13,8 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
   "https://virtual-career-mentor-frontend.onrender.com",
-  "https://virtualcareermentor.vercel.app" // <- Mee live Vercel frontend URL ikkada add chesam
+  "https://virtualcareermentor.vercel.app" ,
+  "https://virtualcareermentor-6dpla2p2z-bhagyas-projects-16429864.vercel.app" 
 ];
 
 app.use(cors({
