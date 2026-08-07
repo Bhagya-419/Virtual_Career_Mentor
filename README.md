@@ -100,7 +100,7 @@ Create a `.env` file inside the **backend** folder and add the following environ
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 OPENROUTER_API_KEY=your_openrouter_api_key
 ```
