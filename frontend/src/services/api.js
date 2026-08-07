@@ -2,7 +2,7 @@ import axios from "axios"
 import { toast } from "react-toastify"
 
 const API = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || "https://virtual-career-mentor-backend.onrender.com/api",
+    baseURL: process.env.REACT_APP_API_URL || "https://virtual-career-mentor.onrender.com/api",
     withCredentials: true
 })
 
