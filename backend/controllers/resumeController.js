@@ -454,33 +454,36 @@ function generateSuggestions(breakdown, sections, resumeLength, hasQuantified, c
 
 exports.uploadResume = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id)
+    const user = await User.patientId ? await User.findById(req.user.id) : await User.findById(req.user.id)
     if (!req.file) return res.status(400).json({ message: "No file uploaded" })
-    user.resumeFile = req.file.filename
+    
+    // Store original name since memory storage doesn't generate a disk filename
+    user.resumeFile = req.file.originalname
     await user.save()
-    res.json({ message: "Resume uploaded successfully", file: req.file.filename })
+    
+    res.json({ message: "Resume uploaded successfully", file: req.file.originalname })
   } catch (error) {
     res.status(500).json({ error: error.message })
   }
 }
-
 exports.analyzeResume = async (req, res) => {
   try {
     const user = await User.findById(req.user.id)
+    if (!user) return res.status(404).json({ message: "User not found" })
+
+    let dataBuffer;
+
     if (req.file) {
-      user.resumeFile = req.file.filename
+      // If a new file is uploaded in this request, use its memory buffer directly!
+      user.resumeFile = req.file.originalname
       await user.save()
+      dataBuffer = req.file.buffer
+    } else {
+      // If no file attached in this request, check if we have a stored buffer or if it needs re-upload
+      return res.status(400).json({ message: "Please upload your resume file for analysis." })
     }
 
-    if (!user || !user.resumeFile)
-      return res.status(400).json({ message: "No resume uploaded" })
-
-    const filePath = path.join(__dirname, "../uploads", user.resumeFile)
-    if (!fs.existsSync(filePath))
-      return res.status(404).json({ message: "Physical file not found" })
-
-    // ── Parse PDF ──────────────────────────────────────────
-    const dataBuffer = fs.readFileSync(filePath)
+    // ── Parse PDF from Buffer (No Disk Storage Needed!) ──
     const data = await pdf(dataBuffer)
     const rawText = data.text
     const text = normalizeText(rawText)
@@ -491,7 +494,7 @@ exports.analyzeResume = async (req, res) => {
 
     // ── Run all checks ─────────────────────────────────────
     const sections = detectSections(text)
-    const contactInfo = checkContactInfo(rawText)        // use rawText for email/phone regex
+    const contactInfo = checkContactInfo(rawText)        
     const resumeLength = checkResumeLength(rawText)
     const hasQuantified = checkQuantifiedAchievements(rawText)
 
@@ -514,14 +517,15 @@ exports.analyzeResume = async (req, res) => {
     // ── Persist ────────────────────────────────────────────
     user.resumeScore = totalScore
     await user.save()
+    
     await ATSHistory.create({
-    userId: req.user.id,
-    score: totalScore,
-    resumeFile: req.file.filename,
-    matchedSkills: breakdown.keywordMatch.matchedSkills,
-    missingSkills: breakdown.keywordMatch.missingSkills,
-    suggestions
-})
+      userId: req.user.id,
+      score: totalScore,
+      resumeFile: user.resumeFile,
+      matchedSkills: breakdown.keywordMatch.matchedSkills,
+      missingSkills: breakdown.keywordMatch.missingSkills,
+      suggestions
+    })
 
     // ── Response ───────────────────────────────────────────
     res.json({

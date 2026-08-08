@@ -1,0 +1,3080 @@
+[{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72dc"
+  },
+  "subject": "C",
+  "question": "Which function is used to print output in C?",
+  "options": [
+    "print()",
+    "printf()",
+    "cout<<",
+    "scanf()"
+  ],
+  "correctAnswer": "printf()"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72dd"
+  },
+  "subject": "C",
+  "question": "Which header file is required for printf() and scanf()?",
+  "options": [
+    "math.h",
+    "stdlib.h",
+    "stdio.h",
+    "string.h"
+  ],
+  "correctAnswer": "stdio.h"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72de"
+  },
+  "subject": "C",
+  "question": "What is the size of int in most modern C compilers?",
+  "options": [
+    "2 bytes",
+    "4 bytes",
+    "8 bytes",
+    "16 bytes"
+  ],
+  "correctAnswer": "4 bytes"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72df"
+  },
+  "subject": "C",
+  "question": "Which operator is used to access the value at a memory address?",
+  "options": [
+    "&",
+    "*",
+    "%",
+    "#"
+  ],
+  "correctAnswer": "*"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e0"
+  },
+  "subject": "C",
+  "question": "Which symbol is used to get the address of a variable?",
+  "options": [
+    "*",
+    "&",
+    "@",
+    "%"
+  ],
+  "correctAnswer": "&"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e1"
+  },
+  "subject": "C",
+  "question": "What is the default return type of main() in C?",
+  "options": [
+    "void",
+    "char",
+    "float",
+    "int"
+  ],
+  "correctAnswer": "int"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e2"
+  },
+  "subject": "C",
+  "question": "Which loop executes at least once?",
+  "options": [
+    "for",
+    "while",
+    "do-while",
+    "nested loop"
+  ],
+  "correctAnswer": "do-while"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e3"
+  },
+  "subject": "C",
+  "question": "Which keyword is used to define a constant variable?",
+  "options": [
+    "fixed",
+    "const",
+    "static",
+    "final"
+  ],
+  "correctAnswer": "const"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e4"
+  },
+  "subject": "C",
+  "question": "What is the output type of strlen()?",
+  "options": [
+    "char",
+    "float",
+    "int",
+    "double"
+  ],
+  "correctAnswer": "int"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e5"
+  },
+  "subject": "C",
+  "question": "Which function is used to compare two strings?",
+  "options": [
+    "strcat()",
+    "strcmp()",
+    "strlen()",
+    "strcpy()"
+  ],
+  "correctAnswer": "strcmp()"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e6"
+  },
+  "subject": "C",
+  "question": "Which storage class retains value between function calls?",
+  "options": [
+    "auto",
+    "register",
+    "static",
+    "extern"
+  ],
+  "correctAnswer": "static"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e7"
+  },
+  "subject": "C",
+  "question": "Which data structure uses FIFO principle?",
+  "options": [
+    "Stack",
+    "Queue",
+    "Tree",
+    "Graph"
+  ],
+  "correctAnswer": "Queue"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e8"
+  },
+  "subject": "C",
+  "question": "Which data structure uses LIFO principle?",
+  "options": [
+    "Queue",
+    "Array",
+    "Stack",
+    "Linked List"
+  ],
+  "correctAnswer": "Stack"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72e9"
+  },
+  "subject": "C",
+  "question": "What is recursion?",
+  "options": [
+    "Function calling itself",
+    "Loop inside loop",
+    "Pointer operation",
+    "Array traversal"
+  ],
+  "correctAnswer": "Function calling itself"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72ea"
+  },
+  "subject": "C",
+  "question": "Which function dynamically allocates memory?",
+  "options": [
+    "malloc()",
+    "printf()",
+    "scanf()",
+    "strlen()"
+  ],
+  "correctAnswer": "malloc()"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72eb"
+  },
+  "subject": "C",
+  "question": "Which function releases dynamically allocated memory?",
+  "options": [
+    "release()",
+    "delete()",
+    "free()",
+    "remove()"
+  ],
+  "correctAnswer": "free()"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72ec"
+  },
+  "subject": "C",
+  "question": "What is the index of the first element in an array?",
+  "options": [
+    "1",
+    "-1",
+    "0",
+    "Depends on compiler"
+  ],
+  "correctAnswer": "0"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72ed"
+  },
+  "subject": "C",
+  "question": "Which operator has the highest precedence?",
+  "options": [
+    "+",
+    "*",
+    "()",
+    "="
+  ],
+  "correctAnswer": "()"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72ee"
+  },
+  "subject": "C",
+  "question": "Which keyword is used to declare a structure?",
+  "options": [
+    "class",
+    "struct",
+    "record",
+    "object"
+  ],
+  "correctAnswer": "struct"
+},
+{
+  "_id": {
+    "$oid": "6a227827f65a27cd65fc72ef"
+  },
+  "subject": "C",
+  "question": "What is the time complexity of binary search?",
+  "options": [
+    "O(n)",
+    "O(log n)",
+    "O(n log n)",
+    "O(n²)"
+  ],
+  "correctAnswer": "O(log n)"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f0"
+  },
+  "subject": "C++",
+  "question": "Which feature supports data hiding in C++?",
+  "options": [
+    "Inheritance",
+    "Encapsulation",
+    "Polymorphism",
+    "Templates"
+  ],
+  "correctAnswer": "Encapsulation"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f1"
+  },
+  "subject": "C++",
+  "question": "Which symbol is used to access members using an object?",
+  "options": [
+    "->",
+    "::",
+    ".",
+    "&"
+  ],
+  "correctAnswer": "."
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f2"
+  },
+  "subject": "C++",
+  "question": "Which concept allows one function to have multiple forms?",
+  "options": [
+    "Abstraction",
+    "Inheritance",
+    "Polymorphism",
+    "Encapsulation"
+  ],
+  "correctAnswer": "Polymorphism"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f3"
+  },
+  "subject": "C++",
+  "question": "Which keyword is used to inherit a class?",
+  "options": [
+    "extends",
+    "inherits",
+    ":",
+    "implements"
+  ],
+  "correctAnswer": ":"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f4"
+  },
+  "subject": "C++",
+  "question": "Which function is automatically called when an object is created?",
+  "options": [
+    "Destructor",
+    "Constructor",
+    "Main",
+    "Friend Function"
+  ],
+  "correctAnswer": "Constructor"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f5"
+  },
+  "subject": "C++",
+  "question": "Which function is automatically called when an object is destroyed?",
+  "options": [
+    "Constructor",
+    "Delete",
+    "Destructor",
+    "Free"
+  ],
+  "correctAnswer": "Destructor"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f6"
+  },
+  "subject": "C++",
+  "question": "Which operator is used to allocate memory dynamically?",
+  "options": [
+    "malloc",
+    "alloc",
+    "new",
+    "create"
+  ],
+  "correctAnswer": "new"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f7"
+  },
+  "subject": "C++",
+  "question": "Which operator is used to deallocate memory allocated using new?",
+  "options": [
+    "free",
+    "delete",
+    "remove",
+    "destroy"
+  ],
+  "correctAnswer": "delete"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f8"
+  },
+  "subject": "C++",
+  "question": "Which of the following is not an OOP concept?",
+  "options": [
+    "Inheritance",
+    "Encapsulation",
+    "Compilation",
+    "Polymorphism"
+  ],
+  "correctAnswer": "Compilation"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72f9"
+  },
+  "subject": "C++",
+  "question": "What is function overloading?",
+  "options": [
+    "Multiple functions with same name but different parameters",
+    "Calling functions recursively",
+    "Using pointers in functions",
+    "Overriding parent function"
+  ],
+  "correctAnswer": "Multiple functions with same name but different parameters"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72fa"
+  },
+  "subject": "C++",
+  "question": "Which STL container follows LIFO?",
+  "options": [
+    "Queue",
+    "Stack",
+    "Vector",
+    "Map"
+  ],
+  "correctAnswer": "Stack"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72fb"
+  },
+  "subject": "C++",
+  "question": "Which STL container stores key-value pairs?",
+  "options": [
+    "Vector",
+    "Stack",
+    "Queue",
+    "Map"
+  ],
+  "correctAnswer": "Map"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72fc"
+  },
+  "subject": "C++",
+  "question": "What is the time complexity of searching in a balanced BST?",
+  "options": [
+    "O(n)",
+    "O(log n)",
+    "O(n²)",
+    "O(1)"
+  ],
+  "correctAnswer": "O(log n)"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72fd"
+  },
+  "subject": "C++",
+  "question": "Which keyword prevents inheritance of a class member?",
+  "options": [
+    "final",
+    "private",
+    "const",
+    "static"
+  ],
+  "correctAnswer": "private"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72fe"
+  },
+  "subject": "C++",
+  "question": "Which keyword refers to the current object?",
+  "options": [
+    "self",
+    "current",
+    "this",
+    "object"
+  ],
+  "correctAnswer": "this"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc72ff"
+  },
+  "subject": "C++",
+  "question": "Which feature allows code reuse?",
+  "options": [
+    "Inheritance",
+    "Destructor",
+    "Friend Function",
+    "Namespace"
+  ],
+  "correctAnswer": "Inheritance"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc7300"
+  },
+  "subject": "C++",
+  "question": "Which access specifier makes members accessible only within the class?",
+  "options": [
+    "public",
+    "protected",
+    "private",
+    "internal"
+  ],
+  "correctAnswer": "private"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc7301"
+  },
+  "subject": "C++",
+  "question": "Which of the following supports runtime polymorphism?",
+  "options": [
+    "Function Overloading",
+    "Operator Overloading",
+    "Virtual Functions",
+    "Templates"
+  ],
+  "correctAnswer": "Virtual Functions"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc7302"
+  },
+  "subject": "C++",
+  "question": "What is the default access specifier in a class?",
+  "options": [
+    "public",
+    "protected",
+    "private",
+    "friend"
+  ],
+  "correctAnswer": "private"
+},
+{
+  "_id": {
+    "$oid": "6a2278b1f65a27cd65fc7303"
+  },
+  "subject": "C++",
+  "question": "Which data structure is commonly used for DFS?",
+  "options": [
+    "Queue",
+    "Stack",
+    "Heap",
+    "Hash Table"
+  ],
+  "correctAnswer": "Stack"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7304"
+  },
+  "subject": "HTML",
+  "question": "What does HTML stand for?",
+  "options": [
+    "Hyper Text Markup Language",
+    "High Text Machine Language",
+    "Hyper Transfer Markup Language",
+    "Home Tool Markup Language"
+  ],
+  "correctAnswer": "Hyper Text Markup Language"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7305"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used to create a hyperlink?",
+  "options": [
+    "<link>",
+    "<a>",
+    "<href>",
+    "<url>"
+  ],
+  "correctAnswer": "<a>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7306"
+  },
+  "subject": "HTML",
+  "question": "Which HTML tag is used for the largest heading?",
+  "options": [
+    "<h6>",
+    "<heading>",
+    "<h1>",
+    "<head>"
+  ],
+  "correctAnswer": "<h1>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7307"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used to insert an image?",
+  "options": [
+    "<picture>",
+    "<img>",
+    "<image>",
+    "<src>"
+  ],
+  "correctAnswer": "<img>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7308"
+  },
+  "subject": "HTML",
+  "question": "Which attribute specifies the image path?",
+  "options": [
+    "link",
+    "src",
+    "href",
+    "path"
+  ],
+  "correctAnswer": "src"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7309"
+  },
+  "subject": "HTML",
+  "question": "Which tag creates a line break?",
+  "options": [
+    "<lb>",
+    "<break>",
+    "<br>",
+    "<newline>"
+  ],
+  "correctAnswer": "<br>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc730a"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used for an unordered list?",
+  "options": [
+    "<ol>",
+    "<ul>",
+    "<li>",
+    "<list>"
+  ],
+  "correctAnswer": "<ul>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc730b"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used for a table row?",
+  "options": [
+    "<td>",
+    "<tr>",
+    "<th>",
+    "<table-row>"
+  ],
+  "correctAnswer": "<tr>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc730c"
+  },
+  "subject": "HTML",
+  "question": "Which tag defines a table cell?",
+  "options": [
+    "<cell>",
+    "<td>",
+    "<tr>",
+    "<th>"
+  ],
+  "correctAnswer": "<td>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc730d"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used to create a form?",
+  "options": [
+    "<input>",
+    "<form>",
+    "<fieldset>",
+    "<submit>"
+  ],
+  "correctAnswer": "<form>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc730e"
+  },
+  "subject": "HTML",
+  "question": "Which input type hides entered characters?",
+  "options": [
+    "text",
+    "hidden",
+    "password",
+    "secure"
+  ],
+  "correctAnswer": "password"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc730f"
+  },
+  "subject": "HTML",
+  "question": "Which attribute provides alternative text for images?",
+  "options": [
+    "title",
+    "alt",
+    "description",
+    "name"
+  ],
+  "correctAnswer": "alt"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7310"
+  },
+  "subject": "HTML",
+  "question": "Which HTML version introduced semantic tags like <article> and <section>?",
+  "options": [
+    "HTML 3",
+    "HTML 4",
+    "HTML5",
+    "XHTML"
+  ],
+  "correctAnswer": "HTML5"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7311"
+  },
+  "subject": "HTML",
+  "question": "Which tag represents navigation links?",
+  "options": [
+    "<navigation>",
+    "<nav>",
+    "<menu>",
+    "<links>"
+  ],
+  "correctAnswer": "<nav>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7312"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used for page footer content?",
+  "options": [
+    "<bottom>",
+    "<footer>",
+    "<end>",
+    "<foot>"
+  ],
+  "correctAnswer": "<footer>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7313"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used to embed video content?",
+  "options": [
+    "<media>",
+    "<movie>",
+    "<video>",
+    "<play>"
+  ],
+  "correctAnswer": "<video>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7314"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used to embed audio?",
+  "options": [
+    "<sound>",
+    "<audio>",
+    "<music>",
+    "<mp3>"
+  ],
+  "correctAnswer": "<audio>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7315"
+  },
+  "subject": "HTML",
+  "question": "Which tag is used to create a dropdown list?",
+  "options": [
+    "<input>",
+    "<list>",
+    "<select>",
+    "<dropdown>"
+  ],
+  "correctAnswer": "<select>"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7316"
+  },
+  "subject": "HTML",
+  "question": "Which attribute makes an input field mandatory?",
+  "options": [
+    "mandatory",
+    "required",
+    "validate",
+    "needed"
+  ],
+  "correctAnswer": "required"
+},
+{
+  "_id": {
+    "$oid": "6a22799ff65a27cd65fc7317"
+  },
+  "subject": "HTML",
+  "question": "Which tag contains metadata about the webpage?",
+  "options": [
+    "<body>",
+    "<meta>",
+    "<head>",
+    "<title>"
+  ],
+  "correctAnswer": "<head>"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7318"
+  },
+  "subject": "CSS",
+  "question": "What does CSS stand for?",
+  "options": [
+    "Computer Style Sheets",
+    "Creative Style Sheets",
+    "Cascading Style Sheets",
+    "Colorful Style Sheets"
+  ],
+  "correctAnswer": "Cascading Style Sheets"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7319"
+  },
+  "subject": "CSS",
+  "question": "Which property is used to change text color?",
+  "options": [
+    "font-color",
+    "text-color",
+    "color",
+    "foreground-color"
+  ],
+  "correctAnswer": "color"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc731a"
+  },
+  "subject": "CSS",
+  "question": "Which property controls the text size?",
+  "options": [
+    "font-style",
+    "font-size",
+    "text-size",
+    "size"
+  ],
+  "correctAnswer": "font-size"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc731b"
+  },
+  "subject": "CSS",
+  "question": "Which selector selects an element by id?",
+  "options": [
+    ".demo",
+    "#demo",
+    "*demo",
+    "demo"
+  ],
+  "correctAnswer": "#demo"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc731c"
+  },
+  "subject": "CSS",
+  "question": "Which selector selects elements by class?",
+  "options": [
+    "#demo",
+    ".demo",
+    "*demo",
+    "demo"
+  ],
+  "correctAnswer": ".demo"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc731d"
+  },
+  "subject": "CSS",
+  "question": "Which property changes the background color?",
+  "options": [
+    "color",
+    "bgcolor",
+    "background-color",
+    "background"
+  ],
+  "correctAnswer": "background-color"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc731e"
+  },
+  "subject": "CSS",
+  "question": "Which property is used to make text bold?",
+  "options": [
+    "font-weight",
+    "font-style",
+    "text-bold",
+    "weight"
+  ],
+  "correctAnswer": "font-weight"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc731f"
+  },
+  "subject": "CSS",
+  "question": "Which value of position keeps an element fixed on screen?",
+  "options": [
+    "absolute",
+    "relative",
+    "fixed",
+    "sticky"
+  ],
+  "correctAnswer": "fixed"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7320"
+  },
+  "subject": "CSS",
+  "question": "Which property adds space inside an element's border?",
+  "options": [
+    "margin",
+    "padding",
+    "spacing",
+    "border-space"
+  ],
+  "correctAnswer": "padding"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7321"
+  },
+  "subject": "CSS",
+  "question": "Which property adds space outside an element's border?",
+  "options": [
+    "padding",
+    "margin",
+    "spacing",
+    "gap"
+  ],
+  "correctAnswer": "margin"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7322"
+  },
+  "subject": "CSS",
+  "question": "Which CSS property is used to create rounded corners?",
+  "options": [
+    "corner-radius",
+    "border-radius",
+    "round-corner",
+    "radius"
+  ],
+  "correctAnswer": "border-radius"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7323"
+  },
+  "subject": "CSS",
+  "question": "Which display value hides an element?",
+  "options": [
+    "hidden",
+    "none",
+    "invisible",
+    "remove"
+  ],
+  "correctAnswer": "none"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7324"
+  },
+  "subject": "CSS",
+  "question": "Which property controls the stacking order of elements?",
+  "options": [
+    "layer",
+    "stack",
+    "z-index",
+    "index"
+  ],
+  "correctAnswer": "z-index"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7325"
+  },
+  "subject": "CSS",
+  "question": "Which layout model is primarily one-dimensional?",
+  "options": [
+    "Grid",
+    "Flexbox",
+    "Table",
+    "Float"
+  ],
+  "correctAnswer": "Flexbox"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7326"
+  },
+  "subject": "CSS",
+  "question": "Which layout model is designed for two-dimensional layouts?",
+  "options": [
+    "Flexbox",
+    "Grid",
+    "Float",
+    "Inline-block"
+  ],
+  "correctAnswer": "Grid"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7327"
+  },
+  "subject": "CSS",
+  "question": "Which property is used to align flex items horizontally?",
+  "options": [
+    "align-items",
+    "justify-content",
+    "align-content",
+    "flex-align"
+  ],
+  "correctAnswer": "justify-content"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7328"
+  },
+  "subject": "CSS",
+  "question": "Which property is used for smooth visual changes?",
+  "options": [
+    "animation",
+    "transform",
+    "transition",
+    "effect"
+  ],
+  "correctAnswer": "transition"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc7329"
+  },
+  "subject": "CSS",
+  "question": "Which unit is relative to the root element's font size?",
+  "options": [
+    "px",
+    "em",
+    "rem",
+    "%"
+  ],
+  "correctAnswer": "rem"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc732a"
+  },
+  "subject": "CSS",
+  "question": "Which pseudo-class applies styles when hovering over an element?",
+  "options": [
+    ":active",
+    ":hover",
+    ":focus",
+    ":visited"
+  ],
+  "correctAnswer": ":hover"
+},
+{
+  "_id": {
+    "$oid": "6a227a7ff65a27cd65fc732b"
+  },
+  "subject": "CSS",
+  "question": "Which property controls whether content overflows its container?",
+  "options": [
+    "overflow",
+    "content-flow",
+    "wrap",
+    "clip"
+  ],
+  "correctAnswer": "overflow"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc732c"
+  },
+  "subject": "JavaScript",
+  "question": "Which keyword is used to declare a block-scoped variable?",
+  "options": [
+    "var",
+    "let",
+    "const",
+    "both let and const"
+  ],
+  "correctAnswer": "both let and const"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc732d"
+  },
+  "subject": "JavaScript",
+  "question": "Which method converts a JSON string into a JavaScript object?",
+  "options": [
+    "JSON.parse()",
+    "JSON.stringify()",
+    "JSON.convert()",
+    "JSON.object()"
+  ],
+  "correctAnswer": "JSON.parse()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc732e"
+  },
+  "subject": "JavaScript",
+  "question": "Which method converts a JavaScript object into a JSON string?",
+  "options": [
+    "JSON.parse()",
+    "JSON.stringify()",
+    "JSON.convert()",
+    "JSON.toString()"
+  ],
+  "correctAnswer": "JSON.stringify()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc732f"
+  },
+  "subject": "JavaScript",
+  "question": "What is the output type of typeof null?",
+  "options": [
+    "null",
+    "undefined",
+    "object",
+    "string"
+  ],
+  "correctAnswer": "object"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7330"
+  },
+  "subject": "JavaScript",
+  "question": "Which symbol is used for strict equality comparison?",
+  "options": [
+    "==",
+    "===",
+    "!=",
+    "="
+  ],
+  "correctAnswer": "==="
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7331"
+  },
+  "subject": "JavaScript",
+  "question": "Which function is used to execute code after a delay?",
+  "options": [
+    "setInterval()",
+    "setTimeout()",
+    "delay()",
+    "wait()"
+  ],
+  "correctAnswer": "setTimeout()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7332"
+  },
+  "subject": "JavaScript",
+  "question": "Which function repeatedly executes code at fixed intervals?",
+  "options": [
+    "setTimeout()",
+    "repeat()",
+    "setInterval()",
+    "loop()"
+  ],
+  "correctAnswer": "setInterval()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7333"
+  },
+  "subject": "JavaScript",
+  "question": "Which keyword is used to create a Promise?",
+  "options": [
+    "promise",
+    "Promise",
+    "new Promise",
+    "async"
+  ],
+  "correctAnswer": "new Promise"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7334"
+  },
+  "subject": "JavaScript",
+  "question": "Which keyword is used before a function to make it asynchronous?",
+  "options": [
+    "await",
+    "promise",
+    "async",
+    "defer"
+  ],
+  "correctAnswer": "async"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7335"
+  },
+  "subject": "JavaScript",
+  "question": "Which keyword waits for a Promise to resolve?",
+  "options": [
+    "async",
+    "wait",
+    "await",
+    "resolve"
+  ],
+  "correctAnswer": "await"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7336"
+  },
+  "subject": "JavaScript",
+  "question": "Which method is used to select an element by id?",
+  "options": [
+    "querySelector()",
+    "getElementById()",
+    "getElement()",
+    "selectById()"
+  ],
+  "correctAnswer": "getElementById()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7337"
+  },
+  "subject": "JavaScript",
+  "question": "Which event occurs when a user clicks an element?",
+  "options": [
+    "onchange",
+    "onmouseover",
+    "onclick",
+    "onload"
+  ],
+  "correctAnswer": "onclick"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7338"
+  },
+  "subject": "JavaScript",
+  "question": "Which array method adds an element at the end?",
+  "options": [
+    "pop()",
+    "shift()",
+    "push()",
+    "unshift()"
+  ],
+  "correctAnswer": "push()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc7339"
+  },
+  "subject": "JavaScript",
+  "question": "Which array method removes the last element?",
+  "options": [
+    "pop()",
+    "shift()",
+    "push()",
+    "splice()"
+  ],
+  "correctAnswer": "pop()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc733a"
+  },
+  "subject": "JavaScript",
+  "question": "Which method creates a new array by applying a function to each element?",
+  "options": [
+    "filter()",
+    "reduce()",
+    "map()",
+    "forEach()"
+  ],
+  "correctAnswer": "map()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc733b"
+  },
+  "subject": "JavaScript",
+  "question": "Which method filters elements based on a condition?",
+  "options": [
+    "filter()",
+    "map()",
+    "reduce()",
+    "find()"
+  ],
+  "correctAnswer": "filter()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc733c"
+  },
+  "subject": "JavaScript",
+  "question": "What is a closure in JavaScript?",
+  "options": [
+    "A loop structure",
+    "A function with access to outer scope variables",
+    "An object method",
+    "A Promise"
+  ],
+  "correctAnswer": "A function with access to outer scope variables"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc733d"
+  },
+  "subject": "JavaScript",
+  "question": "Which operator is used for the spread syntax?",
+  "options": [
+    "...",
+    "**",
+    "=>",
+    "::"
+  ],
+  "correctAnswer": "..."
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc733e"
+  },
+  "subject": "JavaScript",
+  "question": "Which method is used to fetch data from APIs in modern JavaScript?",
+  "options": [
+    "request()",
+    "ajax()",
+    "fetch()",
+    "http()"
+  ],
+  "correctAnswer": "fetch()"
+},
+{
+  "_id": {
+    "$oid": "6a227b20f65a27cd65fc733f"
+  },
+  "subject": "JavaScript",
+  "question": "Which DOM method returns the first matching element?",
+  "options": [
+    "querySelector()",
+    "querySelectorAll()",
+    "getElements()",
+    "findElement()"
+  ],
+  "correctAnswer": "querySelector()"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7340"
+  },
+  "subject": "Web Development",
+  "question": "Which technology is primarily responsible for webpage structure?",
+  "options": [
+    "CSS",
+    "JavaScript",
+    "HTML",
+    "React"
+  ],
+  "correctAnswer": "HTML"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7341"
+  },
+  "subject": "Web Development",
+  "question": "Which technology is used for styling webpages?",
+  "options": [
+    "HTML",
+    "CSS",
+    "Node.js",
+    "MongoDB"
+  ],
+  "correctAnswer": "CSS"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7342"
+  },
+  "subject": "Web Development",
+  "question": "Which technology is mainly used for webpage interactivity?",
+  "options": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SQL"
+  ],
+  "correctAnswer": "JavaScript"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7343"
+  },
+  "subject": "Web Development",
+  "question": "Which HTTP method is used to retrieve data?",
+  "options": [
+    "POST",
+    "PUT",
+    "GET",
+    "DELETE"
+  ],
+  "correctAnswer": "GET"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7344"
+  },
+  "subject": "Web Development",
+  "question": "Which HTTP method is commonly used to create new data?",
+  "options": [
+    "GET",
+    "POST",
+    "DELETE",
+    "PATCH"
+  ],
+  "correctAnswer": "POST"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7345"
+  },
+  "subject": "Web Development",
+  "question": "What does API stand for?",
+  "options": [
+    "Application Programming Interface",
+    "Advanced Program Integration",
+    "Application Process Interface",
+    "Advanced Processing Integration"
+  ],
+  "correctAnswer": "Application Programming Interface"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7346"
+  },
+  "subject": "Web Development",
+  "question": "Which database is commonly used with the MERN stack?",
+  "options": [
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Oracle"
+  ],
+  "correctAnswer": "MongoDB"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7347"
+  },
+  "subject": "Web Development",
+  "question": "What does REST stand for?",
+  "options": [
+    "Representational State Transfer",
+    "Remote State Transfer",
+    "Reliable State Transfer",
+    "Resource State Tool"
+  ],
+  "correctAnswer": "Representational State Transfer"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7348"
+  },
+  "subject": "Web Development",
+  "question": "Which status code indicates success?",
+  "options": [
+    "404",
+    "500",
+    "200",
+    "301"
+  ],
+  "correctAnswer": "200"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7349"
+  },
+  "subject": "Web Development",
+  "question": "Which status code means 'Not Found'?",
+  "options": [
+    "200",
+    "201",
+    "404",
+    "500"
+  ],
+  "correctAnswer": "404"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc734a"
+  },
+  "subject": "Web Development",
+  "question": "Which framework is commonly used for frontend development?",
+  "options": [
+    "Express",
+    "Node.js",
+    "React",
+    "MongoDB"
+  ],
+  "correctAnswer": "React"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc734b"
+  },
+  "subject": "Web Development",
+  "question": "Which runtime environment executes JavaScript outside the browser?",
+  "options": [
+    "React",
+    "Express",
+    "Node.js",
+    "MongoDB"
+  ],
+  "correctAnswer": "Node.js"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc734c"
+  },
+  "subject": "Web Development",
+  "question": "Which Express.js method defines a GET route?",
+  "options": [
+    "app.post()",
+    "app.get()",
+    "app.put()",
+    "app.delete()"
+  ],
+  "correctAnswer": "app.get()"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc734d"
+  },
+  "subject": "Web Development",
+  "question": "What is JWT commonly used for?",
+  "options": [
+    "Database Storage",
+    "Authentication",
+    "Styling",
+    "Hosting"
+  ],
+  "correctAnswer": "Authentication"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc734e"
+  },
+  "subject": "Web Development",
+  "question": "Which local storage option persists even after the browser is closed?",
+  "options": [
+    "sessionStorage",
+    "cookies",
+    "localStorage",
+    "cache"
+  ],
+  "correctAnswer": "localStorage"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc734f"
+  },
+  "subject": "Web Development",
+  "question": "Which command installs project dependencies in Node.js?",
+  "options": [
+    "npm run",
+    "npm install",
+    "node install",
+    "npm start"
+  ],
+  "correctAnswer": "npm install"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7350"
+  },
+  "subject": "Web Development",
+  "question": "Which file stores project dependencies?",
+  "options": [
+    "server.js",
+    "index.js",
+    "package.json",
+    "config.js"
+  ],
+  "correctAnswer": "package.json"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7351"
+  },
+  "subject": "Web Development",
+  "question": "What is the main purpose of Git?",
+  "options": [
+    "Database Management",
+    "Version Control",
+    "Hosting",
+    "Authentication"
+  ],
+  "correctAnswer": "Version Control"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7352"
+  },
+  "subject": "Web Development",
+  "question": "Which Git command uploads local commits to GitHub?",
+  "options": [
+    "git clone",
+    "git commit",
+    "git push",
+    "git fetch"
+  ],
+  "correctAnswer": "git push"
+},
+{
+  "_id": {
+    "$oid": "6a227c04f65a27cd65fc7353"
+  },
+  "subject": "Web Development",
+  "question": "Which architecture separates frontend and backend concerns?",
+  "options": [
+    "Monolithic",
+    "Client-Server",
+    "Stack",
+    "Queue"
+  ],
+  "correctAnswer": "Client-Server"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b392"
+  },
+  "subject": "Python",
+  "question": "What is Python?",
+  "options": [
+    "Database",
+    "Programming Language",
+    "Browser",
+    "OS"
+  ],
+  "correctAnswer": "Programming Language"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b393"
+  },
+  "subject": "Python",
+  "question": "Which keyword is used to define a function?",
+  "options": [
+    "function",
+    "define",
+    "def",
+    "fun"
+  ],
+  "correctAnswer": "def"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b394"
+  },
+  "subject": "Python",
+  "question": "Which data type stores True or False?",
+  "options": [
+    "int",
+    "str",
+    "bool",
+    "float"
+  ],
+  "correctAnswer": "bool"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b395"
+  },
+  "subject": "Python",
+  "question": "Which symbol is used for comments?",
+  "options": [
+    "//",
+    "#",
+    "/*",
+    "--"
+  ],
+  "correctAnswer": "#"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b396"
+  },
+  "subject": "Python",
+  "question": "Which function displays output?",
+  "options": [
+    "display()",
+    "echo()",
+    "print()",
+    "show()"
+  ],
+  "correctAnswer": "print()"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b397"
+  },
+  "subject": "Python",
+  "question": "Which collection is ordered and mutable?",
+  "options": [
+    "Set",
+    "Tuple",
+    "List",
+    "Dictionary"
+  ],
+  "correctAnswer": "List"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b398"
+  },
+  "subject": "Python",
+  "question": "Which loop repeats while a condition is true?",
+  "options": [
+    "for",
+    "repeat",
+    "while",
+    "loop"
+  ],
+  "correctAnswer": "while"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b399"
+  },
+  "subject": "Python",
+  "question": "What is the file extension of Python files?",
+  "options": [
+    ".java",
+    ".py",
+    ".cpp",
+    ".js"
+  ],
+  "correctAnswer": ".py"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b39a"
+  },
+  "subject": "Python",
+  "question": "Which keyword is used for conditional branching?",
+  "options": [
+    "if",
+    "switch",
+    "case",
+    "branch"
+  ],
+  "correctAnswer": "if"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b39b"
+  },
+  "subject": "Python",
+  "question": "Which operator is used for exponentiation?",
+  "options": [
+    "^",
+    "**",
+    "//",
+    "%"
+  ],
+  "correctAnswer": "**"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b39c"
+  },
+  "subject": "Python",
+  "question": "Which data type is immutable in Python?",
+  "options": [
+    "List",
+    "Dictionary",
+    "Set",
+    "Tuple"
+  ],
+  "correctAnswer": "Tuple"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b39d"
+  },
+  "subject": "Python",
+  "question": "What is the output of len('Python')?",
+  "options": [
+    "5",
+    "6",
+    "7",
+    "Error"
+  ],
+  "correctAnswer": "6"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b39e"
+  },
+  "subject": "Python",
+  "question": "Which keyword is used to handle exceptions?",
+  "options": [
+    "catch",
+    "try",
+    "handle",
+    "except"
+  ],
+  "correctAnswer": "try"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b39f"
+  },
+  "subject": "Python",
+  "question": "Which function is used to get user input?",
+  "options": [
+    "scan()",
+    "input()",
+    "get()",
+    "read()"
+  ],
+  "correctAnswer": "input()"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b3a0"
+  },
+  "subject": "Python",
+  "question": "What is the output of type([])?",
+  "options": [
+    "tuple",
+    "dict",
+    "list",
+    "set"
+  ],
+  "correctAnswer": "list"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b3a1"
+  },
+  "subject": "Python",
+  "question": "Which operator is used for floor division?",
+  "options": [
+    "/",
+    "%",
+    "//",
+    "**"
+  ],
+  "correctAnswer": "//"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b3a2"
+  },
+  "subject": "Python",
+  "question": "Which method adds an element to the end of a list?",
+  "options": [
+    "insert()",
+    "append()",
+    "extend()",
+    "add()"
+  ],
+  "correctAnswer": "append()"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b3a3"
+  },
+  "subject": "Python",
+  "question": "Which keyword is used to define a class in Python?",
+  "options": [
+    "object",
+    "struct",
+    "class",
+    "define"
+  ],
+  "correctAnswer": "class"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b3a4"
+  },
+  "subject": "Python",
+  "question": "What is the output of bool(0)?",
+  "options": [
+    "True",
+    "False",
+    "0",
+    "Error"
+  ],
+  "correctAnswer": "False"
+},
+{
+  "_id": {
+    "$oid": "6a22ab80aa04e5fcea12b3a5"
+  },
+  "subject": "Python",
+  "question": "Which module is commonly used for mathematical functions like sqrt()?",
+  "options": [
+    "random",
+    "math",
+    "numpy",
+    "os"
+  ],
+  "correctAnswer": "math"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3a6"
+  },
+  "subject": "Java",
+  "question": "Java is a ____ language.",
+  "options": [
+    "Markup",
+    "Programming",
+    "Database",
+    "Query"
+  ],
+  "correctAnswer": "Programming"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3a7"
+  },
+  "subject": "Java",
+  "question": "Which keyword is used to create a class?",
+  "options": [
+    "class",
+    "Class",
+    "new",
+    "create"
+  ],
+  "correctAnswer": "class"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3a8"
+  },
+  "subject": "Java",
+  "question": "Which method is the entry point of a Java program?",
+  "options": [
+    "start()",
+    "run()",
+    "main()",
+    "execute()"
+  ],
+  "correctAnswer": "main()"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3a9"
+  },
+  "subject": "Java",
+  "question": "Which symbol is used to end a statement?",
+  "options": [
+    ":",
+    ".",
+    ";",
+    ","
+  ],
+  "correctAnswer": ";"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3aa"
+  },
+  "subject": "Java",
+  "question": "Java is ____ dependent.",
+  "options": [
+    "Platform",
+    "Machine",
+    "Compiler",
+    "None"
+  ],
+  "correctAnswer": "None"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3ab"
+  },
+  "subject": "Java",
+  "question": "Which keyword is used for inheritance?",
+  "options": [
+    "extends",
+    "implements",
+    "inherits",
+    "super"
+  ],
+  "correctAnswer": "extends"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3ac"
+  },
+  "subject": "Java",
+  "question": "Which package is automatically imported?",
+  "options": [
+    "java.util",
+    "java.io",
+    "java.lang",
+    "java.net"
+  ],
+  "correctAnswer": "java.lang"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3ad"
+  },
+  "subject": "Java",
+  "question": "Which loop executes at least once?",
+  "options": [
+    "for",
+    "while",
+    "do-while",
+    "foreach"
+  ],
+  "correctAnswer": "do-while"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3ae"
+  },
+  "subject": "Java",
+  "question": "Which operator compares values?",
+  "options": [
+    "=",
+    "==",
+    ":=",
+    "!="
+  ],
+  "correctAnswer": "=="
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3af"
+  },
+  "subject": "Java",
+  "question": "Which concept allows multiple methods with same name?",
+  "options": [
+    "Inheritance",
+    "Polymorphism",
+    "Abstraction",
+    "Encapsulation"
+  ],
+  "correctAnswer": "Polymorphism"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b0"
+  },
+  "subject": "Java",
+  "question": "Which keyword is used to inherit a class in Java?",
+  "options": [
+    "implements",
+    "extends",
+    "inherits",
+    "super"
+  ],
+  "correctAnswer": "extends"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b1"
+  },
+  "subject": "Java",
+  "question": "Which method is the entry point of a Java program?",
+  "options": [
+    "start()",
+    "run()",
+    "main()",
+    "init()"
+  ],
+  "correctAnswer": "main()"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b2"
+  },
+  "subject": "Java",
+  "question": "Which package is automatically imported in every Java program?",
+  "options": [
+    "java.util",
+    "java.io",
+    "java.lang",
+    "java.net"
+  ],
+  "correctAnswer": "java.lang"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b3"
+  },
+  "subject": "Java",
+  "question": "Which keyword is used to prevent inheritance?",
+  "options": [
+    "const",
+    "static",
+    "final",
+    "private"
+  ],
+  "correctAnswer": "final"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b4"
+  },
+  "subject": "Java",
+  "question": "Which collection does not allow duplicate elements?",
+  "options": [
+    "ArrayList",
+    "LinkedList",
+    "HashSet",
+    "Vector"
+  ],
+  "correctAnswer": "HashSet"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b5"
+  },
+  "subject": "Java",
+  "question": "Which exception occurs when dividing by zero?",
+  "options": [
+    "NullPointerException",
+    "ArithmeticException",
+    "IOException",
+    "ClassNotFoundException"
+  ],
+  "correctAnswer": "ArithmeticException"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b6"
+  },
+  "subject": "Java",
+  "question": "Which keyword refers to the current object?",
+  "options": [
+    "self",
+    "current",
+    "this",
+    "super"
+  ],
+  "correctAnswer": "this"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b7"
+  },
+  "subject": "Java",
+  "question": "Which interface is implemented by ArrayList?",
+  "options": [
+    "Set",
+    "Map",
+    "List",
+    "Queue"
+  ],
+  "correctAnswer": "List"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b8"
+  },
+  "subject": "Java",
+  "question": "Which keyword is used to handle exceptions?",
+  "options": [
+    "catch",
+    "try",
+    "throw",
+    "finally"
+  ],
+  "correctAnswer": "try"
+},
+{
+  "_id": {
+    "$oid": "6a22ac4eaa04e5fcea12b3b9"
+  },
+  "subject": "Java",
+  "question": "What is the size of an int in Java?",
+  "options": [
+    "2 bytes",
+    "4 bytes",
+    "8 bytes",
+    "Depends on system"
+  ],
+  "correctAnswer": "4 bytes"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3ba"
+  },
+  "subject": "SQL",
+  "question": "SQL stands for?",
+  "options": [
+    "Structured Query Language",
+    "Simple Query Language",
+    "System Query Language",
+    "Server Query Language"
+  ],
+  "correctAnswer": "Structured Query Language"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3bb"
+  },
+  "subject": "SQL",
+  "question": "Which command retrieves data?",
+  "options": [
+    "GET",
+    "SELECT",
+    "FETCH",
+    "SHOW"
+  ],
+  "correctAnswer": "SELECT"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3bc"
+  },
+  "subject": "SQL",
+  "question": "Which command inserts data?",
+  "options": [
+    "INSERT",
+    "ADD",
+    "PUT",
+    "CREATE"
+  ],
+  "correctAnswer": "INSERT"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3bd"
+  },
+  "subject": "SQL",
+  "question": "Which clause filters rows?",
+  "options": [
+    "ORDER BY",
+    "GROUP BY",
+    "WHERE",
+    "HAVING"
+  ],
+  "correctAnswer": "WHERE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3be"
+  },
+  "subject": "SQL",
+  "question": "Which keyword removes a table?",
+  "options": [
+    "DELETE",
+    "REMOVE",
+    "DROP",
+    "TRUNCATE"
+  ],
+  "correctAnswer": "DROP"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3bf"
+  },
+  "subject": "SQL",
+  "question": "Which function counts rows?",
+  "options": [
+    "SUM()",
+    "COUNT()",
+    "TOTAL()",
+    "ROWS()"
+  ],
+  "correctAnswer": "COUNT()"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c0"
+  },
+  "subject": "SQL",
+  "question": "Which command updates existing records?",
+  "options": [
+    "MODIFY",
+    "UPDATE",
+    "CHANGE",
+    "ALTER"
+  ],
+  "correctAnswer": "UPDATE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c1"
+  },
+  "subject": "SQL",
+  "question": "Primary key must be?",
+  "options": [
+    "Duplicate",
+    "Null",
+    "Unique",
+    "Optional"
+  ],
+  "correctAnswer": "Unique"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c2"
+  },
+  "subject": "SQL",
+  "question": "Which join returns matching records from both tables?",
+  "options": [
+    "LEFT JOIN",
+    "RIGHT JOIN",
+    "INNER JOIN",
+    "FULL JOIN"
+  ],
+  "correctAnswer": "INNER JOIN"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c3"
+  },
+  "subject": "SQL",
+  "question": "Which statement creates a table?",
+  "options": [
+    "MAKE TABLE",
+    "NEW TABLE",
+    "CREATE TABLE",
+    "ADD TABLE"
+  ],
+  "correctAnswer": "CREATE TABLE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c4"
+  },
+  "subject": "SQL",
+  "question": "Which SQL clause is used to filter rows?",
+  "options": [
+    "ORDER BY",
+    "GROUP BY",
+    "WHERE",
+    "HAVING"
+  ],
+  "correctAnswer": "WHERE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c5"
+  },
+  "subject": "SQL",
+  "question": "Which command is used to remove all rows from a table but keep the structure?",
+  "options": [
+    "DELETE",
+    "DROP",
+    "TRUNCATE",
+    "REMOVE"
+  ],
+  "correctAnswer": "TRUNCATE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c6"
+  },
+  "subject": "SQL",
+  "question": "Which SQL function returns the total number of rows?",
+  "options": [
+    "SUM()",
+    "TOTAL()",
+    "COUNT()",
+    "ROWS()"
+  ],
+  "correctAnswer": "COUNT()"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c7"
+  },
+  "subject": "SQL",
+  "question": "Which keyword is used to sort results in ascending order?",
+  "options": [
+    "SORT",
+    "ORDER BY",
+    "ASC",
+    "GROUP BY"
+  ],
+  "correctAnswer": "ASC"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c8"
+  },
+  "subject": "SQL",
+  "question": "Which join returns matching rows from both tables only?",
+  "options": [
+    "LEFT JOIN",
+    "RIGHT JOIN",
+    "FULL JOIN",
+    "INNER JOIN"
+  ],
+  "correctAnswer": "INNER JOIN"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3c9"
+  },
+  "subject": "SQL",
+  "question": "Which constraint ensures all values in a column are unique?",
+  "options": [
+    "PRIMARY KEY",
+    "NOT NULL",
+    "UNIQUE",
+    "CHECK"
+  ],
+  "correctAnswer": "UNIQUE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3ca"
+  },
+  "subject": "SQL",
+  "question": "Which command adds a new column to an existing table?",
+  "options": [
+    "MODIFY TABLE",
+    "UPDATE TABLE",
+    "ALTER TABLE",
+    "ADD TABLE"
+  ],
+  "correctAnswer": "ALTER TABLE"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3cb"
+  },
+  "subject": "SQL",
+  "question": "Which aggregate function returns the average value?",
+  "options": [
+    "MEAN()",
+    "AVG()",
+    "AVERAGE()",
+    "MID()"
+  ],
+  "correctAnswer": "AVG()"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3cc"
+  },
+  "subject": "SQL",
+  "question": "Which clause groups rows having the same values?",
+  "options": [
+    "ORDER BY",
+    "GROUP BY",
+    "WHERE",
+    "HAVING"
+  ],
+  "correctAnswer": "GROUP BY"
+},
+{
+  "_id": {
+    "$oid": "6a22acd8aa04e5fcea12b3cd"
+  },
+  "subject": "SQL",
+  "question": "Which key uniquely identifies each record in a table?",
+  "options": [
+    "Foreign Key",
+    "Candidate Key",
+    "Primary Key",
+    "Composite Key"
+  ],
+  "correctAnswer": "Primary Key"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3ce"
+  },
+  "subject": "Aptitude",
+  "question": "What is 25% of 200?",
+  "options": [
+    "25",
+    "50",
+    "75",
+    "100"
+  ],
+  "correctAnswer": "50"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3cf"
+  },
+  "subject": "Aptitude",
+  "question": "If a train travels 60 km in 1 hour, its speed is?",
+  "options": [
+    "30 km/h",
+    "40 km/h",
+    "60 km/h",
+    "80 km/h"
+  ],
+  "correctAnswer": "60 km/h"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d0"
+  },
+  "subject": "Aptitude",
+  "question": "What is the average of 10, 20, 30?",
+  "options": [
+    "15",
+    "20",
+    "25",
+    "30"
+  ],
+  "correctAnswer": "20"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d1"
+  },
+  "subject": "Aptitude",
+  "question": "What is 15 × 8?",
+  "options": [
+    "100",
+    "110",
+    "120",
+    "130"
+  ],
+  "correctAnswer": "120"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d2"
+  },
+  "subject": "Aptitude",
+  "question": "A shop gives 10% discount on ₹1000. Selling price?",
+  "options": [
+    "₹800",
+    "₹850",
+    "₹900",
+    "₹950"
+  ],
+  "correctAnswer": "₹900"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d3"
+  },
+  "subject": "Aptitude",
+  "question": "What is the square root of 144?",
+  "options": [
+    "10",
+    "11",
+    "12",
+    "13"
+  ],
+  "correctAnswer": "12"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d4"
+  },
+  "subject": "Aptitude",
+  "question": "Ratio of 2:4 simplifies to?",
+  "options": [
+    "1:2",
+    "2:2",
+    "1:4",
+    "4:8"
+  ],
+  "correctAnswer": "1:2"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d5"
+  },
+  "subject": "Aptitude",
+  "question": "What is 18% of 50?",
+  "options": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "correctAnswer": "9"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d6"
+  },
+  "subject": "Aptitude",
+  "question": "Simple interest on ₹1000 at 10% for 1 year?",
+  "options": [
+    "₹50",
+    "₹100",
+    "₹150",
+    "₹200"
+  ],
+  "correctAnswer": "₹100"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d7"
+  },
+  "subject": "Aptitude",
+  "question": "What comes next: 2, 4, 8, 16, ?",
+  "options": [
+    "18",
+    "24",
+    "30",
+    "32"
+  ],
+  "correctAnswer": "32"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d8"
+  },
+  "subject": "Aptitude",
+  "question": "A train travels 120 km in 2 hours. What is its speed?",
+  "options": [
+    "50 km/h",
+    "60 km/h",
+    "70 km/h",
+    "80 km/h"
+  ],
+  "correctAnswer": "60 km/h"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3d9"
+  },
+  "subject": "Aptitude",
+  "question": "What is 25% of 200?",
+  "options": [
+    "25",
+    "40",
+    "50",
+    "75"
+  ],
+  "correctAnswer": "50"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3da"
+  },
+  "subject": "Aptitude",
+  "question": "The ratio of boys to girls is 3:2. If there are 30 boys, how many girls are there?",
+  "options": [
+    "15",
+    "20",
+    "25",
+    "30"
+  ],
+  "correctAnswer": "20"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3db"
+  },
+  "subject": "Aptitude",
+  "question": "A shopkeeper gives a 10% discount on a ₹500 item. What is the selling price?",
+  "options": [
+    "₹400",
+    "₹450",
+    "₹475",
+    "₹490"
+  ],
+  "correctAnswer": "₹450"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3dc"
+  },
+  "subject": "Aptitude",
+  "question": "Find the next number: 5, 10, 20, 40, ?",
+  "options": [
+    "60",
+    "70",
+    "80",
+    "90"
+  ],
+  "correctAnswer": "80"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3dd"
+  },
+  "subject": "Aptitude",
+  "question": "Simple interest on ₹1000 at 10% per annum for 2 years is:",
+  "options": [
+    "₹100",
+    "₹150",
+    "₹200",
+    "₹250"
+  ],
+  "correctAnswer": "₹200"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3de"
+  },
+  "subject": "Aptitude",
+  "question": "A man buys an item for ₹800 and sells it for ₹1000. What is the profit percentage?",
+  "options": [
+    "20%",
+    "25%",
+    "30%",
+    "35%"
+  ],
+  "correctAnswer": "25%"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3df"
+  },
+  "subject": "Aptitude",
+  "question": "If 8 workers complete a task in 12 days, how many days will 16 workers take?",
+  "options": [
+    "4",
+    "6",
+    "8",
+    "10"
+  ],
+  "correctAnswer": "6"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3e0"
+  },
+  "subject": "Aptitude",
+  "question": "The average of 10, 20, 30, 40 and 50 is:",
+  "options": [
+    "25",
+    "30",
+    "35",
+    "40"
+  ],
+  "correctAnswer": "30"
+},
+{
+  "_id": {
+    "$oid": "6a22adc0aa04e5fcea12b3e1"
+  },
+  "subject": "Aptitude",
+  "question": "A number is increased by 20% and becomes 120. What was the original number?",
+  "options": [
+    "80",
+    "90",
+    "100",
+    "110"
+  ],
+  "correctAnswer": "100"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e2"
+  },
+  "subject": "Reasoning",
+  "question": "Find the next number: 2, 4, 8, 16, ?",
+  "options": [
+    "20",
+    "24",
+    "30",
+    "32"
+  ],
+  "correctAnswer": "32"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e3"
+  },
+  "subject": "Reasoning",
+  "question": "If CAT = DBU, then DOG = ?",
+  "options": [
+    "EPH",
+    "EOG",
+    "FPH",
+    "DOH"
+  ],
+  "correctAnswer": "EPH"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e4"
+  },
+  "subject": "Reasoning",
+  "question": "Which is the odd one out?",
+  "options": [
+    "Apple",
+    "Banana",
+    "Mango",
+    "Car"
+  ],
+  "correctAnswer": "Car"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e5"
+  },
+  "subject": "Reasoning",
+  "question": "If all roses are flowers and all flowers are plants, then roses are?",
+  "options": [
+    "Trees",
+    "Plants",
+    "Fruits",
+    "Leaves"
+  ],
+  "correctAnswer": "Plants"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e6"
+  },
+  "subject": "Reasoning",
+  "question": "Find the missing number: 3, 6, 12, 24, ?",
+  "options": [
+    "36",
+    "42",
+    "48",
+    "50"
+  ],
+  "correctAnswer": "48"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e7"
+  },
+  "subject": "Reasoning",
+  "question": "Which word does not belong?",
+  "options": [
+    "Circle",
+    "Square",
+    "Triangle",
+    "Table"
+  ],
+  "correctAnswer": "Table"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e8"
+  },
+  "subject": "Reasoning",
+  "question": "A is taller than B. B is taller than C. Who is shortest?",
+  "options": [
+    "A",
+    "B",
+    "C",
+    "Cannot say"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3e9"
+  },
+  "subject": "Reasoning",
+  "question": "What comes next: A, C, E, G, ?",
+  "options": [
+    "H",
+    "I",
+    "J",
+    "K"
+  ],
+  "correctAnswer": "I"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3ea"
+  },
+  "subject": "Reasoning",
+  "question": "If today is Monday, what day will it be after 10 days?",
+  "options": [
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ],
+  "correctAnswer": "Thursday"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3eb"
+  },
+  "subject": "Reasoning",
+  "question": "Find the next number: 1, 1, 2, 3, 5, ?",
+  "options": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "correctAnswer": "8"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3ec"
+  },
+  "subject": "Reasoning",
+  "question": "Find the next number: 4, 9, 16, 25, ?",
+  "options": [
+    "30",
+    "35",
+    "36",
+    "49"
+  ],
+  "correctAnswer": "36"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3ed"
+  },
+  "subject": "Reasoning",
+  "question": "If PEN is coded as QFO, then BOOK is coded as?",
+  "options": [
+    "CPPL",
+    "CPPK",
+    "CQQM",
+    "CPQM"
+  ],
+  "correctAnswer": "CPPL"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3ee"
+  },
+  "subject": "Reasoning",
+  "question": "Which number is missing? 2, 6, 12, 20, ?, 42",
+  "options": [
+    "28",
+    "30",
+    "32",
+    "34"
+  ],
+  "correctAnswer": "30"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3ef"
+  },
+  "subject": "Reasoning",
+  "question": "A is taller than B. B is taller than C. Who is the shortest?",
+  "options": [
+    "A",
+    "B",
+    "C",
+    "Cannot determine"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3f0"
+  },
+  "subject": "Reasoning",
+  "question": "Find the odd one out.",
+  "options": [
+    "Triangle",
+    "Square",
+    "Circle",
+    "Rectangle"
+  ],
+  "correctAnswer": "Circle"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3f1"
+  },
+  "subject": "Reasoning",
+  "question": "If today is Wednesday, what day will it be after 10 days?",
+  "options": [
+    "Friday",
+    "Saturday",
+    "Sunday",
+    "Monday"
+  ],
+  "correctAnswer": "Saturday"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3f2"
+  },
+  "subject": "Reasoning",
+  "question": "Find the next letter: Z, X, V, T, ?",
+  "options": [
+    "R",
+    "Q",
+    "S",
+    "P"
+  ],
+  "correctAnswer": "R"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3f3"
+  },
+  "subject": "Reasoning",
+  "question": "Which number does not belong? 3, 5, 7, 11, 14, 17",
+  "options": [
+    "5",
+    "7",
+    "14",
+    "17"
+  ],
+  "correctAnswer": "14"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3f4"
+  },
+  "subject": "Reasoning",
+  "question": "If 7 + 3 = 73 and 8 + 2 = 82, then 9 + 4 = ?",
+  "options": [
+    "94",
+    "49",
+    "13",
+    "96"
+  ],
+  "correctAnswer": "94"
+},
+{
+  "_id": {
+    "$oid": "6a22afd9aa04e5fcea12b3f5"
+  },
+  "subject": "Reasoning",
+  "question": "Pointing to a man, a woman said, 'He is the son of my mother's only son.' Who is the man?",
+  "options": [
+    "Brother",
+    "Son",
+    "Father",
+    "Nephew"
+  ],
+  "correctAnswer": "Son"
+}]
